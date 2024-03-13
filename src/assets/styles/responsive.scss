@@ -1,0 +1,222 @@
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 991px) {
+  .modal.show .modal-dialog {
+    overflow-x: auto;
+  }
+}
+@media all and (max-width: 768px) {
+    .video-call-wrapper .left-video{
+        margin-bottom: 15px;
+    }
+    .mainHeader .searchBlog .innerSearch .searchInside{
+        top: 20px;
+        left: 20px;
+    }
+    .mainHeader .searchBlog .innerSearch{
+        padding: 3px ;
+        width: 394px;
+    }
+    .appointment-wrapper .app-details-wrapper .message-payment{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .cx-sideBar .cx-sidebar-wrapper{
+        height: calc(100vh - 20px);
+    }
+    .CustomerDetails-wrapper .table-wrapper.left-table{
+        margin-bottom: 0;
+        height: calc(100vh - 160px);
+    }
+    .dashboard_wrapper{
+        height: calc(100vh - 100px);
+    }
+  .appointment-wrapper .reportsTabs .tob_nav_pills.nav.nav-pills {
+    margin-bottom: 15px;
+  }
+  .appointment-wrapper .dark-btns-wrapper {
+    margin-bottom: 15px;
+  }
+  .rbc-toolbar .rbc-toolbar-label {
+    font-size: 20px;
+  }
+  .calendar-section {
+    margin-bottom: 15px;
+  }
+  .mainHeader .top-header {
+    top: 10px;
+  }
+  .cx-sideBar .cx-sidebar-wrapper {
+    left: 10px;
+    top: 10px;
+  }
+  .appointment-wrapper .search-filter-wrapper .search-filter-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .appointment-wrapper .app-details-wrapper .left {
+    margin-bottom: 15px;
+  }
+  .appointment-wrapper .app-details-wrapper .left .photo-video-wrapper .photo {
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .mainHeader .left-breadcurm .page-name-heading {
+    display: none;
+  }
+  #cx-main {
+    padding: 85px 15px 15px 15px;
+  }
+  .mainHeader .searchBlog .smallInnerSearch {
+    padding: 5px 10px;
+  }
+  .mainHeader .top-header {
+    height: 60px;
+  }
+  .arrow-wrapper {
+    display: block;
+  }
+  .mainHeader .top-header {
+    width: calc(100% - 100px);
+    margin-left: 85px;
+    padding: 10px;
+  }
+  #cx-main {
+    margin-left: 70px !important;
+  }
+}
+@media all and (max-width: 480px) {
+  .acc-rej-btn {
+    .btn-blue-filled {
+      margin-top: 10px;
+      margin-left: 0 !important;
+    }
+  }
+  .appointment-wrapper .app-details-wrapper .message-payment {
+    margin-top: 15px;
+  }
+  .appointment-wrapper .app-details-wrapper .right {
+    padding: 15px;
+  }
+  .appointment-wrapper .app-details-wrapper .left {
+    padding: 15px;
+  }
+  .appointment-wrapper
+    .app-details-wrapper
+    .left
+    .btn-wrapper
+    .btn-yellow-filled {
+    margin: 10px 0;
+  }
+  .appointment-wrapper .app-details-wrapper .left .btn-wrapper {
+    button {
+      width: 100%;
+    }
+    margin-top: 15px;
+  }
+  .appointment-wrapper .app-details-wrapper .left .btn-wrapper {
+    margin-top: 15px;
+  }
+  .appointment-wrapper .search-filter-wrapper .search-filter-left .fltr-btn {
+    height: 35px;
+    margin-left: 10px;
+  }
+  .serach-input {
+    height: 35px;
+    width: 100%;
+  }
+  .appointment-wrapper .search-filter-wrapper .search-filter-right {
+    width: 100%;
+  }
+  .appointment-wrapper .dark-btns-wrapper .dark-btns {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 0 12px;
+  }
+  .appointment-wrapper .search-filter-wrapper {
+    display: block;
+  }
+  .appointment-wrapper .dark-btns-wrapper .dark-btns {
+    height: 35px;
+    width: 100%;
+  }
+  .appointment-wrapper .reportsTabs .nav-link {
+    font-size: 12px;
+  }
+  .appointment-wrapper .reportsTabs .nav-item {
+    margin-right: 8px;
+  }
+  .rbc-row-bg {
+    height: 50px;
+  }
+  .rbc-date-cell {
+    padding: 0;
+  }
+  .rbc-button-link {
+    margin: 10px 10px 0 0;
+  }
+  .rbc-btn-group button {
+    font-size: 12px;
+  }
+  .mainHeader .searchBlog .innerSearch .insideIcons {
+    margin-right: 10px;
+  }
+  .mainHeader .searchBlog .innerSearch .innerForm {
+    height: 30px;
+  }
+  .mainHeader .searchBlog .innerSearch .circleImg,
+  .mainHeader .searchBlog .smallInnerSearch .circleImg {
+    height: 30px;
+    width: 30px;
+  }
+  .mainHeader .searchBlog .smallInnerSearch {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  .mainHeader .searchBlog .smallInnerSearch .insideIcons {
+    margin-right: 10px;
+  }
+  .mainHeader .searchBlog .innerSearch .searchInside {
+    top: 13px;
+    left: 18px;
+  }
+  .mainHeader .searchBlog .innerSearch {
+    padding: 2px;
+  }
+  .mainHeader .searchBlog .innerSearch {
+    width: 225px;
+  }
+  .mainHeader .searchBlog .innerSearch .innerForm {
+    width: 110px;
+  }
+  .appointment-wrapper .app-result-arrow-top img {
+    width: 18px;
+  }
+  .appointment-wrapper .app-result-arrow-top label span {
+    font-size: 11px;
+  }
+  .appointment-wrapper .app-result-arrow-top label {
+    font-size: 11px;
+  }
+  .appointment-wrapper .app-details-wrapper .left .aap-heading label {
+    margin-bottom: 10px;
+  }
+  .appointment-wrapper
+    .app-details-wrapper
+    .left
+    .btn-wrapper
+    .btn-yellow-filled {
+    width: 100%;
+  }
+  .appointment-wrapper .app-details-wrapper .left .btn-wrapper {
+    text-align: unset;
+    width: 100%;
+  }
+  .CustomerDetails-wrapper .top-btn-heading-wrapper {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 991px) {
+}

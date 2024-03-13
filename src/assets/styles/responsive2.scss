@@ -1,0 +1,1271 @@
+@media all and (max-width: 1366px) {}
+
+@media all and (max-width: 1024px) {
+    .authMain .signinForm {
+        width: calc(50vw - 70px);
+    }
+
+    .authMain .signinForm .social-account-login .social-btns {
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 1000px) {}
+
+@media all and (max-width: 992px) {
+    .login {
+        button {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media all and (max-width: 767px) {}
+
+
+@media all and (max-width: 768px) {
+    .authMain .signinForm {
+        width: calc(70vw - 184px) !important;
+        height: 100%;
+    }
+
+    .login {
+        button {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+        }
+    }
+
+    .authMain .signinForm .signInDesc {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .authMain .signinForm .inputBox {
+        margin-bottom: 20px;
+    }
+
+    .authMain .landingImg {
+        height: 100%;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels {
+        // min-width: 140px;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels .label_old p::before,
+    .lc_top .lct_header_wrapper .chart_labels .label_new p::before {
+        left: 98px;
+    }
+}
+
+@media all and (max-width: 580px) {
+    .authMain .clinic_schedule {
+        width: calc(100vw - 80px);
+    }
+
+    .login {
+        button {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-bottom: 15px !important;
+        }
+    }
+
+    .authMain .signinForm .inputBox .clinic_images_wrapper {
+        flex-wrap: wrap;
+
+        .img_item {
+            margin-bottom: 10px;
+        }
+    }
+
+    .authMain .signinForm {
+        height: 100%;
+        width: calc(100vw - 94px) !important;
+    }
+
+    .authMain .verification_wrapper {
+        padding: 40px;
+    }
+
+    .authMain .verification_wrapper .login button {
+        margin-bottom: 15px !important;
+    }
+
+    .authMain .verification_wrapper .verification_inner .vfi_desc {
+        margin-bottom: 30px;
+    }
+
+    .authMain .landingImg2 .text_wrapper .tw_title {
+        font-size: 30px;
+    }
+
+    .authMain .verification_wrapper {
+        height: calc(100vh - 150px);
+    }
+
+    .common_modal .modal-content .modal-footer .modal_btn_wrapper {
+        width: 100%;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left .title_text_wrapper .sub_date,
+    .renew_date p,
+    .Subscription_wrapper .Subscription .subscription_item1 .sub_item_left .title_text_wrapper .sub_date {
+        font-size: 12px !important;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item1 {
+        padding: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom .profile_name .name {
+        font-size: 13px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .nav-link,
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .nav-link.active,
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .show>.nav-link {
+        font-size: 11px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .info_title_wrapper h3.info_title {
+        font-size: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .info_title_wrapper img {
+        height: 17px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper {
+        padding: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom>img {
+        height: 80px;
+        width: 80px;
+        top: 25px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom .profile_name {
+        margin-left: 100px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_top {
+        height: 50px;
+    }
+
+    .daw_tabs>.row>.col-lg-10 {
+        padding: 0;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields label {
+        font-size: 12px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields p.info_text {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields ul li {
+        font-size: 14px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .team_wrapper {
+        // display: block;
+
+        .team_item {
+            margin-bottom: 10px;
+        }
+
+        p.info_text {
+            margin-bottom: 0;
+        }
+
+        img {
+            margin-bottom: 0;
+        }
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .profile_docs_wrapper .doc_item {
+        min-width: 100%;
+        padding: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .language_wrapper input[type=radio]+label {
+        font-size: 14px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .language_wrapper div {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .font-14 {
+        font-size: 12px;
+    }
+
+    .common_modal .modal-content .modal-body .modal_body_inner_wrapper .benefits_wrapper ul li {
+        font-size: 14px;
+    }
+
+    .common_modal .modal-content .modal-body .modal_body_inner_wrapper p.description {
+        font-size: 14px;
+    }
+
+    .common_modal .modal-content .modal-header .modal-title .modal_header_wrapper .modal_left p {
+        font-size: 16px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .common_modal .modal-content .modal-footer .modal_btn_wrapper {
+        padding: 15px;
+    }
+
+    .reports_wrapper .table_wrapper_pagination .photo {
+        font-size: 10px;
+    }
+
+    .reports_wrapper .table_wrapper_pagination {
+        margin-bottom: 15px;
+    }
+
+    .font-17 {
+        font-size: 14px;
+    }
+
+    .btn-height {
+        height: 45px;
+    }
+
+    .btn-height {
+        font-size: 14px;
+    }
+
+    .reports_wrapper .patient_stat_wrapper .earning_amount p:nth-child(1) {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .donut_chart_wrapper .Chart_labels {
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    .donut_chart_wrapper .Chart_labels .cl_item p:first-child {
+        font-size: 10px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .cx-btn-dark {
+        width: 100%;
+    }
+
+    .mainHeader .profile_dropdown {
+        width: 225px;
+        top: 63px;
+    }
+
+    .mainHeader .profile_dropdown .pd_title {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .mainHeader .profile_dropdown .pd_profile_description_wrapper .pdf_name_status p.name {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .mainHeader .profile_dropdown .pd_profile_description_wrapper .pdf_img img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu {
+
+        transform: translate3d(-22px, 40px, 0px);
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-toggle {
+        padding: 4px 0;
+        font-size: 12px;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-toggle::after {
+        right: -2px;
+        top: 45%;
+    }
+
+    .mainHeader .profile_dropdown {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .mainHeader .profile_dropdown .logout_btn_wrapper button {
+        height: 33px;
+        font-size: 12px;
+        line-height: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu .dropdown-item div {
+        font-size: 10px;
+    }
+
+    .authMain .landingImg {
+        height: 100%;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels {
+        min-width: 140px;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels .label_old p::before,
+    .lc_top .lct_header_wrapper .chart_labels .label_new p::before {
+        left: 40px;
+    }
+
+    .dashboard_wrapper .dashboard_statistics_wrapper .stat_item {
+        padding: 10px;
+
+        >img {
+            width: 55px;
+        }
+
+        .stat_item_inner {
+            >img {
+                width: 55px;
+            }
+        }
+
+        .stat_text p {
+            font-size: 24px;
+        }
+
+        .stat_3 p {
+            font-size: 12px;
+        }
+    }
+
+    .dashboard_wrapper .dashboard_statistics_wrapper .stat_item .stat_text p {
+        line-height: 20px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left {
+        display: block;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left .renew_date {
+        margin-left: 10px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right {
+        justify-content: start;
+        margin-left: 10px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right a {
+        margin: 7px 0 0;
+    }
+
+    .authMain {
+        .login_img {
+            height: 85px;
+            position: absolute;
+            top: 34px;
+        }
+
+        .row {
+            flex-direction: column-reverse;
+        }
+
+        .landingImg {
+            border-radius: 20px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                max-height: calc(100vh - 60px);
+                object-fit: contain;
+                height: 71vh;
+            }
+        }
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu {
+        padding: 5px;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu .dropdown-item div .add_icon {
+        width: 10px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .authMain .landingImg {
+        // align-items: center;
+    }
+
+    .login {
+        button {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+        }
+    }
+
+    .authMain .signinForm {
+        width: calc(100vw - 74px) !important;
+        height: 100%;
+    }
+
+    .shift_selecter .schedule_label {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .authMain .clinic_schedule .cs_header_wrapper .shift_and_days_selector .weekend_selecter {
+        display: block;
+    }
+
+    .authMain .clinic_schedule .cs_header_wrapper .shift_and_days_selector .weekend_selecter .schedule_label {
+        margin-bottom: 20px;
+    }
+
+    .authMain .verification_wrapper {
+        padding: 40px;
+    }
+
+    .authMain .verification_wrapper .login button {
+        margin-bottom: 15px !important;
+    }
+
+    .authMain .verification_wrapper .verification_inner .vfi_desc {
+        margin-bottom: 30px;
+    }
+
+    .authMain .landingImg2 .text_wrapper .tw_title {
+        font-size: 27px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom .profile_name .name {
+        font-size: 13px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .nav-link,
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .nav-link.active,
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .show>.nav-link {
+        font-size: 11px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .info_title_wrapper h3.info_title {
+        font-size: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .info_title_wrapper img {
+        height: 17px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper {
+        padding: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom>img {
+        height: 80px;
+        width: 80px;
+        top: 25px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom .profile_name {
+        margin-left: 100px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_top {
+        height: 50px;
+    }
+
+    .daw_tabs>.row>.col-lg-10 {
+        padding: 0;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields label {
+        font-size: 12px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields p.info_text {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields ul li {
+        font-size: 14px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .team_wrapper {
+        display: block;
+
+        .team_item {
+            margin-bottom: 10px;
+        }
+
+        p.info_text {
+            margin-bottom: 0;
+        }
+
+        img {
+            margin-bottom: 0;
+        }
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .profile_docs_wrapper .doc_item {
+        min-width: 100%;
+        padding: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .language_wrapper input[type=radio]+label {
+        font-size: 14px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .language_wrapper div {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .font-14 {
+        font-size: 12px;
+    }
+
+    .common_modal .modal-content .modal-body .modal_body_inner_wrapper .benefits_wrapper ul li {
+        font-size: 14px;
+    }
+
+    .common_modal .modal-content .modal-body .modal_body_inner_wrapper p.description {
+        font-size: 14px;
+    }
+
+    .common_modal .modal-content .modal-header .modal-title .modal_header_wrapper .modal_left p {
+        font-size: 16px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .common_modal .modal-content .modal-footer .modal_btn_wrapper {
+        padding: 15px;
+    }
+
+    .reports_wrapper .table_wrapper_pagination .photo {
+        font-size: 10px;
+    }
+
+    .reports_wrapper .table_wrapper_pagination {
+        margin-bottom: 15px;
+    }
+
+    .font-17 {
+        font-size: 14px;
+    }
+
+    .btn-height {
+        height: 45px;
+    }
+
+    .btn-height {
+        font-size: 14px;
+    }
+
+    .reports_wrapper .patient_stat_wrapper .earning_amount p:nth-child(1) {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .donut_chart_wrapper .Chart_labels {
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    .donut_chart_wrapper .Chart_labels .cl_item p:first-child {
+        font-size: 10px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .cx-btn-dark {
+        width: 100%;
+    }
+
+    .mainHeader .profile_dropdown {
+        width: 225px;
+        top: 40px;
+    }
+
+    .mainHeader .profile_dropdown .pd_title {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .mainHeader .profile_dropdown .pd_profile_description_wrapper .pdf_name_status p.name {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .mainHeader .profile_dropdown .pd_profile_description_wrapper .pdf_img img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu {
+
+        transform: translate3d(-22px, 40px, 0px);
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-toggle {
+        padding: 4px 0;
+        font-size: 12px;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-toggle::after {
+        right: -2px;
+        top: 45%;
+    }
+
+    .mainHeader .profile_dropdown {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .mainHeader .profile_dropdown .logout_btn_wrapper button {
+        height: 33px;
+        font-size: 12px;
+        line-height: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu .dropdown-item div {
+        font-size: 12px;
+    }
+
+    .authMain .landingImg {
+        height: 100%;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels {
+        min-width: 140px;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels .label_old p::before,
+    .lc_top .lct_header_wrapper .chart_labels .label_new p::before {
+        left: 40px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left {
+        display: block;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left .renew_date {
+        margin-left: 10px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right {
+        justify-content: start;
+        margin-left: 10px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right a {
+        margin: 7px 0 0;
+    }
+
+}
+
+@media all and (max-width: 420px) {
+    .authMain .landingImg {
+        // align-items: center;
+    }
+
+    .authMain .signinForm {
+        width: calc(100vw - 54px) !important;
+        height: 100%;
+    }
+
+    .login {
+        button {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+        }
+    }
+
+    .authMain .clinic_schedule .cs_header_wrapper .shift_and_days_selector .weekend_selecter {
+        display: block;
+    }
+
+    .authMain .clinic_schedule .cs_header_wrapper .shift_and_days_selector .weekend_selecter .schedule_label {
+        margin-bottom: 20px;
+    }
+
+    .authMain .verification_wrapper {
+        padding: 40px;
+    }
+
+    .authMain .verification_wrapper .login button {
+        margin-bottom: 15px !important;
+    }
+
+    .authMain .verification_wrapper .verification_inner .vfi_desc {
+        margin-bottom: 30px;
+    }
+
+    .authMain .landingImg2 .text_wrapper .tw_title {
+        font-size: 22px;
+    }
+
+    .authMain .verification_wrapper {
+        height: calc(100vh - 200px);
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom .profile_name .name {
+        font-size: 13px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .nav-link,
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .nav-link.active,
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .show>.nav-link {
+        font-size: 11px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .info_title_wrapper h3.info_title {
+        font-size: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .info_title_wrapper img {
+        height: 17px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper {
+        padding: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom>img {
+        height: 80px;
+        width: 80px;
+        top: 25px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom .profile_name {
+        margin-left: 100px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_top {
+        height: 50px;
+    }
+
+    .daw_tabs>.row>.col-lg-10 {
+        padding: 0;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields label {
+        font-size: 12px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields p.info_text {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields ul li {
+        font-size: 14px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .team_wrapper {
+        display: block;
+
+        .team_item {
+            margin-bottom: 10px;
+        }
+
+        p.info_text {
+            margin-bottom: 0;
+        }
+
+        img {
+            margin-bottom: 0;
+        }
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .profile_docs_wrapper .doc_item {
+        min-width: 100%;
+        padding: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .language_wrapper input[type=radio]+label {
+        font-size: 14px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .language_wrapper div {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .font-14 {
+        font-size: 12px;
+    }
+
+    .common_modal .modal-content .modal-body .modal_body_inner_wrapper .benefits_wrapper ul li {
+        font-size: 14px;
+    }
+
+    .common_modal .modal-content .modal-body .modal_body_inner_wrapper p.description {
+        font-size: 14px;
+    }
+
+    .common_modal .modal-content .modal-header .modal-title .modal_header_wrapper .modal_left p {
+        font-size: 16px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .common_modal .modal-content .modal-footer .modal_btn_wrapper {
+        padding: 15px;
+    }
+
+    .reports_wrapper .table_wrapper_pagination .photo {
+        font-size: 10px;
+    }
+
+    .reports_wrapper .table_wrapper_pagination {
+        margin-bottom: 15px;
+    }
+
+    .font-17 {
+        font-size: 14px;
+    }
+
+    .btn-height {
+        height: 45px;
+    }
+
+    .btn-height {
+        font-size: 14px;
+    }
+
+    .reports_wrapper .patient_stat_wrapper .earning_amount p:nth-child(1) {
+        font-size: 20px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .donut_chart_wrapper .Chart_labels {
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    .donut_chart_wrapper .Chart_labels .cl_item p:first-child {
+        font-size: 10px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .cx-btn-dark {
+        width: 100%;
+    }
+
+    .mainHeader .profile_dropdown {
+        width: 225px;
+        top: 40px;
+    }
+
+    .mainHeader .profile_dropdown .pd_title {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .mainHeader .profile_dropdown .pd_profile_description_wrapper .pdf_name_status p.name {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .mainHeader .profile_dropdown .pd_profile_description_wrapper .pdf_img img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu {
+
+        transform: translate3d(-22px, 40px, 0px);
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-toggle {
+        padding: 4px 0;
+        font-size: 12px;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-toggle::after {
+        right: -2px;
+        top: 45%;
+    }
+
+    .mainHeader .profile_dropdown {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .mainHeader .profile_dropdown .logout_btn_wrapper button {
+        height: 33px;
+        font-size: 12px;
+        line-height: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu .dropdown-item div {
+        font-size: 12px;
+    }
+
+    .authMain .landingImg {
+        height: 100%;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels {
+        min-width: 140px;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels .label_old p::before,
+    .lc_top .lct_header_wrapper .chart_labels .label_new p::before {
+        left: 40px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left {
+        display: block;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left .renew_date {
+        margin-left: 10px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right {
+        justify-content: start;
+        margin-left: 10px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right a {
+        margin: 7px 0 0;
+    }
+}
+
+@media all and (max-width: 360px) {
+    .authMain .signinForm {
+        width: calc(100vw - 54px) !important;
+        height: 100%;
+    }
+
+    .login {
+        button {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+        }
+    }
+
+    .authMain .clinic_schedule .schedule_cards_wrapper .schedule_card .sc_inner .selection {
+        min-width: 80px !important;
+    }
+
+    .authMain .verification_wrapper {
+        padding: 40px;
+    }
+
+    .authMain .verification_wrapper .login button {
+        margin-bottom: 15px !important;
+    }
+
+    .authMain .verification_wrapper .verification_inner .vfi_desc {
+        margin-bottom: 30px;
+    }
+
+    .authMain .landingImg2 .text_wrapper .tw_title {
+        font-size: 22px;
+    }
+
+    .authMain .verification_wrapper {
+        height: calc(100vh - 80px);
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left {
+        display: block;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left .renew_date {
+        margin-left: 10px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item {
+        padding: 15px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right a {
+        margin: 0;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right {
+        justify-content: start;
+        margin-left: 10px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom .profile_name .name {
+        font-size: 13px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .nav-link,
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .nav-link.active,
+    .myprofile_wrapper .myprofile .profile_info_wrapper .daw_tabs .nav-pills .nav-item .show>.nav-link {
+        font-size: 11px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .info_title_wrapper h3.info_title {
+        font-size: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .info_title_wrapper img {
+        height: 17px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper {
+        padding: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom>img {
+        height: 80px;
+        width: 80px;
+        top: 25px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_bottom .profile_name {
+        margin-left: 100px;
+    }
+
+    .myprofile_wrapper .myprofile .header_wrapper .header_top {
+        height: 50px;
+    }
+
+    .daw_tabs>.row>.col-lg-10 {
+        padding: 0;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields label {
+        font-size: 12px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields p.info_text {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields ul li {
+        font-size: 14px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .team_wrapper {
+        display: block;
+
+        .team_item {
+            margin-bottom: 10px;
+        }
+
+        p.info_text {
+            margin-bottom: 0;
+        }
+
+        img {
+            margin-bottom: 0;
+        }
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .profile_docs_wrapper .doc_item {
+        min-width: 100%;
+        padding: 15px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .language_wrapper input[type=radio]+label {
+        font-size: 14px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .profile_info_fields .language_wrapper div {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .font-14 {
+        font-size: 12px;
+    }
+
+    .common_modal .modal-content .modal-body .modal_body_inner_wrapper .benefits_wrapper ul li {
+        font-size: 14px;
+    }
+
+    .common_modal .modal-content .modal-body .modal_body_inner_wrapper p.description {
+        font-size: 14px;
+    }
+
+    .common_modal .modal-content .modal-header .modal-title .modal_header_wrapper .modal_left p {
+        font-size: 16px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    .common_modal .modal-content .modal-footer .modal_btn_wrapper {
+        padding: 15px;
+    }
+
+    .reports_wrapper .table_wrapper_pagination .photo {
+        font-size: 10px;
+    }
+
+    .reports_wrapper .table_wrapper_pagination {
+        margin-bottom: 15px;
+    }
+
+    .font-17 {
+        font-size: 14px;
+    }
+
+    .btn-height {
+        height: 45px;
+    }
+
+    .btn-height {
+        font-size: 14px;
+    }
+
+    .reports_wrapper .patient_stat_wrapper .earning_amount p:nth-child(1) {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .donut_chart_wrapper .Chart_labels {
+        padding: 10px;
+        margin-top: 0;
+    }
+
+    .donut_chart_wrapper .Chart_labels .cl_item p:first-child {
+        font-size: 10px;
+    }
+
+    .myprofile_wrapper .myprofile .profile_info_wrapper .profile_info_wrapper_inner .cx-btn-dark {
+        width: 100%;
+    }
+
+    .mainHeader .profile_dropdown {
+        width: 225px;
+        top: 40px;
+    }
+
+    .mainHeader .profile_dropdown .pd_title {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .mainHeader .profile_dropdown .pd_profile_description_wrapper .pdf_name_status p.name {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .mainHeader .profile_dropdown .pd_profile_description_wrapper .pdf_img img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu {
+
+        transform: translate3d(-22px, 40px, 0px);
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-toggle {
+        padding: 4px 0;
+        font-size: 12px;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-toggle::after {
+        right: -2px;
+        top: 45%;
+    }
+
+    .mainHeader .profile_dropdown {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .mainHeader .profile_dropdown .logout_btn_wrapper button {
+        height: 33px;
+        font-size: 12px;
+        line-height: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainHeader .profile_dropdown .pd_status_selection .dropdown .dropdown-menu .dropdown-item div {
+        font-size: 12px;
+    }
+
+    .authMain .landingImg {
+        height: 100%;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels {
+        min-width: 140px;
+    }
+
+    .lc_top .lct_header_wrapper .chart_labels .label_old p::before,
+    .lc_top .lct_header_wrapper .chart_labels .label_new p::before {
+        left: 40px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left {
+        display: block;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_left .renew_date {
+        margin-left: 10px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right {
+        justify-content: start;
+        margin-left: 10px;
+    }
+
+    .Subscription_wrapper .Subscription .subscription_item .sub_item_right a {
+        margin: 7px 0 0;
+    }
+}

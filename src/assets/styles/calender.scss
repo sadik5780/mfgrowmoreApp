@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+// @import "variables";
+
+// Calendar Styles
+@import "react-big-calendar/lib/sass/styles";
+@import "react-big-calendar/lib/addons/dragAndDrop/styles";
+
+.calendar-section {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  .holiday-and-legend {
+    margin-top: 20px;
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .holidays-section {
+      padding: 20px;
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px 0 var(--gray_02_LightMode);
+      background-color: #f6f2e5;
+      .holiday-date {
+        color: var(--Warning_text_07BE24_lightMode);
+        margin-right: 10px;
+        font-weight: 600;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    .legend-section {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px 0 var(--gray_02_LightMode);
+      .capsule-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 0%;
+        .capsule {
+          padding: 5px 10px;
+          display: flex !important;
+          flex-wrap: wrap;
+          flex-grow: 1;
+          flex-shrink: 0;
+          flex-basis: 0%;
+          .legend-color-capsule {
+            width: 2.4rem !important;
+            height: 1rem !important;
+            content: "";
+            border-radius: 10px;
+            vertical-align: middle;
+          }
+          .color-today {
+            background-color: var(--blueBorderColor_53B7E8_LightMode);
+          }
+          .color-leave-applied {
+            background-color: var(--Warning_text_07BE24_lightMode);
+          }
+          .color-approved-leave {
+            background-color: #04b520;
+          }
+          .color-week-off {
+            background-color: var(--blue_deeplight_EEF8FD);
+          }
+          .color-reported-time {
+            background-color: #016da1;
+          }
+          .color-holiday {
+            background-color: #ff0000;
+          }
+          .color-project-start {
+            background-color: #e4612a;
+          }
+          .color-project-end {
+            background-color: #ffe600;
+          }
+          .legend-label {
+            padding-left: 10px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+
+            @media (min-width: 1024) {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.heading {
+  h5 {
+    color: var(--gray_08_LightMode);
+    font-weight: 600;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--gray_03_LightMode);
+  }
+}
+.dashboard-heading {
+  h3 {
+    color: var(--gray_08_LightMode);
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  
+}
+.rbc-toolbar button:active, .rbc-toolbar button.rbc-active{
+  background-color:var(--text_dark_blue_34528A);
+  color:var(--secondary_light_bg_E9F5FB);
+}
+.rbc-toolbar button{
+  border:none;
+  
+}
+.rbc-day-bg + .rbc-day-bg{
+  margin:5px;
+  border-radius:10px;
+  background-color:var(--secondary_light_bg_E9F5FB);
+}
+.rbc-button-link{
+  margin:15px 15px 0 0;
+}
+.rbc-today{
+  background-color:var(--text_dark_blue_34528A) !important;
+  .rbc-button-link{
+    color:#fff !important;
+  }
+}
+.rbc-date-cell.rbc-now{
+  .rbc-button-link{
+    color:var(--secondary_light_bg_E9F5FB);
+  }
+}
+.rbc-button-link{
+  color:var(--text_dark_blue_34528A);
+}
+.rbc-day-bg{
+  margin:5px;
+  border-radius:10px;
+  // background-color:var(--secondary_light_bg_E9F5FB);
+}
+.rbc-toolbar .rbc-toolbar-label{
+  font-size: 30px;
+  color: var(--text_dark_blue_34528A);
+  font-weight: 700;
+}
+.rbc-month-view{
+  color: var(--text_light_table_heading_A3AED0);
+  font-size: 12px;
+font-weight: 400;
+}
+.rbc-btn-group{
+  button{
+    color: var(--text_light_table_heading_A3AED0);
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.rbc-month-row + .rbc-month-row, .rbc-month-view, .rbc-header{
+  border: none;
+}
+.rbc-day-bg + .rbc-day-bg, .rbc-header + .rbc-header{
+  border: none;
+}
+.rbc-toolbar .rbc-toolbar-label{
+  float: right;
+}
+.rbc-toolbar{
+  display: block;
+}
+.rbc-toolbar button:hover{
+  background-color: unset !important;
+  color: var(--text_dark_blue_34528A);
+}
+.rbc-toolbar button{
+  padding: 5px 8px;
+  border-radius: 10px !important;
+  margin: 0 5px;
+}
+.rbc-header{
+  overflow: visible;
+}
+.rbc-month-row{
+  .rbc-row-bg{
+    .rbc-day-bg{
+background-color: var(--secondary_light_bg_E9F5FB);
+    }
+  }
+}
+
+.rbc-time-header-content{
+  .rbc-row-bg{
+    .rbc-day-bg{
+background-color: transparent !important;
+    }
+  }
+}
+.rbc-time-view .rbc-allday-cell{
+  display: none;
+}
