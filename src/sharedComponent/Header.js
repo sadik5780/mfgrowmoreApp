@@ -155,7 +155,6 @@ const Header = () => {
                   onMouseOut={() => setClicked(false)}
                   transition={{ duration: 0.4, delay: 0 }} className="profile_dropdown"
                 >
-                  <p className="pd_title"> <span>Animal App -</span> Premium Plus</p>
                   <div className="pd_profile_description_wrapper">
                     <div className="pdf_img">
                       <img src={profile_img} alt="" />
