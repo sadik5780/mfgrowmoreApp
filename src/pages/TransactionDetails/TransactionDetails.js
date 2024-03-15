@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import { Tab, Tabs } from "react-bootstrap";
-import earn_icon from "../../assets/images/icons/earn_icon.svg";
-import patient_icon from "../../assets/images/icons/patient_icon.svg";
-import total_appoint_icon from "../../assets/images/icons/total_appoint_icon.svg";
-import complete_icon from "../../assets/images/icons/complete_icon.svg";
-import cancelled_icon from "../../assets/images/icons/cancelled_icon.svg";
 import wallet_icon from "../../assets/images/icons/wallet_icon.svg";
 import export_icon from "../../assets/images/icons/export_icon.svg";
 import ic_completed from "../../assets/images/ic_completed.svg";

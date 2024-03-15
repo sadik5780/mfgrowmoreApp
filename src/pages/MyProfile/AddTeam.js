@@ -4,7 +4,6 @@ import clinic_img_2 from "../../assets/images/clinic_img_2.svg";
 import clinic_img_3 from "../../assets/images/clinic_img_3.svg";
 import clinic_img_4 from "../../assets/images/clinic_img_4.svg";
 import img_preview_delete_icon from "../../assets/images/icons/img_preview_delete_icon.svg";
-import upload_doc_icon from "../../assets/images/icons/upload_doc_icon.svg";
 import upload_icon from "../../assets/images/icons/upload_icon.svg";
 import { motion } from "framer-motion";
 import { DarkButton, DonutChart } from "../commonComponents/commonComp";

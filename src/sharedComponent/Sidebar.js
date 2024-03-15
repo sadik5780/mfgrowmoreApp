@@ -9,8 +9,6 @@ import Pharmacy from "../assets/images/sidebarIcons/pharmacy.svg";
 import PharmacyActive from "../assets/images/sidebarIcons/PharmacyActive.svg";
 import vacinators from "../assets/images/sidebarIcons/tabler_vaccine.svg";
 import vacinatorsActive from "../assets/images/sidebarIcons/tabler_vaccineActive.svg";
-import Ambulance from "../assets/images/sidebarIcons/Ambulance.svg";
-import AmbulanceActive from "../assets/images/sidebarIcons/AmbulanceActive.svg";
 import deliveryBoy from "../assets/images/sidebarIcons/DeliveryBoy.svg";
 import deliveryBoyActive from "../assets/images/sidebarIcons/DeliveryBoyActive.svg";
 import double_arrow from "../assets/images/double_arrow.svg";
@@ -76,7 +74,7 @@ const Sidebar = () => {
                 </Link>
               </div>
               {/* Customer Details */}
-              <div className="sidebarLinks">
+              {/* <div className="sidebarLinks">
                 <Link to="/CustomerDetails" className='targetLink' onClick={mobileSidebarOff}>
                   <div className="dashboardLink">
                     <img src={currentRoute === "/CustomerDetails" 
@@ -87,9 +85,9 @@ const Sidebar = () => {
                       currentRoute === "/CustomerDetails" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>
-              </div>
+              </div> */}
               {/* Appointments */}
-              <Accordion.Item eventKey="0">
+              {/* <Accordion.Item eventKey="0">
                 <Accordion.Header onClick={() => {
                   setPharmacy(!pharmacy);
                   setAdminS(false);
@@ -106,8 +104,7 @@ const Sidebar = () => {
                           currentRoute === "/Video" ? "activeTxt" : "deActiveTxt"}>Appointments</p>
                         <img src={currentRoute === "/AtClinic" ||
                           currentRoute === "/Video" ? activeImg : null} className='activelogo' alt="" />
-                        {/* <img src={pharmacy ? arrowAActive : rightArrow
-                        } className='arrowSetting' alt="" /> */}
+                        
                       </div>
                     </div>
                   </Link>
@@ -126,10 +123,10 @@ const Sidebar = () => {
                     </Link>
                   </div>
                 </Accordion.Body>
-              </Accordion.Item>
+              </Accordion.Item> */}
               
               {/* Reports */}
-              <div className="sidebarLinks">
+              {/* <div className="sidebarLinks">
                 <Link to="/Reports" className='targetLink' onClick={mobileSidebarOff}>
                   <div className="dashboardLink">
                     <img src={currentRoute === "/Reports" ? vacinatorsActive : vacinators} alt="" />
@@ -137,9 +134,9 @@ const Sidebar = () => {
                     <img src={currentRoute === "/Reports" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>
-              </div>
+              </div> */}
               {/* Transaction Details */}
-              <div className="sidebarLinks">
+              {/* <div className="sidebarLinks">
                 <Link to="/TransactionDetails" className='targetLink' onClick={mobileSidebarOff}>
                   <div className="dashboardLink">
                     <img src={currentRoute === "/TransactionDetails" ? AmbulanceActive : Ambulance} alt="" />
@@ -147,9 +144,9 @@ const Sidebar = () => {
                     <img src={currentRoute === "/TransactionDetails" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>
-              </div>
+              </div> */}
               {/* Subscription */}
-              <div className="sidebarLinks">
+              {/* <div className="sidebarLinks">
                 <Link to="/Subscription" className='targetLink' onClick={mobileSidebarOff}>
                   <div className="dashboardLink">
                     <img src={currentRoute === "/Subscription" ? deliveryBoyActive : deliveryBoy} alt="" />
@@ -157,7 +154,7 @@ const Sidebar = () => {
                     <img src={currentRoute === "/Subscription" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>
-              </div>
+              </div> */}
               
             </Accordion>
           </>

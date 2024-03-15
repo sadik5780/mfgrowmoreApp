@@ -1,14 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
-import teleCall from "../../assets/images/icons/telephone.svg";
-import insiderImg from "../../assets/images/icons/landigIcon.svg";
 import lock from "../../assets/images/icons/lock.svg";
-import otp_icon from "../../assets/images/icons/otp_icon.svg";
-import eye from "../../assets/images/icons/eye.svg";
-import reset_pass from "../../assets/images/reset_pass.svg";
-import fb from "../../assets/images/fb.svg";
-import apple from "../../assets/images/apple.svg";
-import google from "../../assets/images/google.svg";
+import eye from "../../assets/images/icons/eye.svg"; 
 import { Link, useNavigate } from "react-router-dom";
 import { DarkButton,HandleRoute } from "../commonComponents/commonComp";
 

@@ -1,9 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
-import teleCall from "../../assets/images/ic_call1.svg";
 import telephone from "../../assets/images/icons/telephone.svg";
 import otp_icon from "../../assets/images/icons/otp_icon.svg";
-import lock from "../../assets/images/lock.svg";
 import { Link, useNavigate } from "react-router-dom";
 import { DarkButton, HandleRoute } from "../commonComponents/commonComp";
 

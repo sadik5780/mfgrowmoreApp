@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import { Tab, Tabs } from "react-bootstrap";
-import earn_icon from "../../assets/images/icons/earn_icon.svg";
-import patient_icon from "../../assets/images/icons/patient_icon.svg";
-import total_appoint_icon from "../../assets/images/icons/total_appoint_icon.svg";
-import complete_icon from "../../assets/images/icons/complete_icon.svg";
-import cancelled_icon from "../../assets/images/icons/cancelled_icon.svg";
-import revenue_icon from "../../assets/images/icons/revenue_icon.svg";
 import export_icon from "../../assets/images/icons/export_icon.svg";
 import ic_completed from "../../assets/images/ic_completed.svg";
 import ic_rejected from "../../assets/images/ic_rejected.svg";
@@ -57,7 +51,7 @@ const Reports = () => {
                           <div className="row">
                             <div className="col-lg-3">
                               <div className="stat_item">
-                                <img src={total_appoint_icon} />
+                                {/* <img src={total_appoint_icon} /> */}
                                 <div className="stat_text stat_4">
                                   <label>Total Appointments</label>
                                   <p>200</p>
@@ -66,7 +60,7 @@ const Reports = () => {
                             </div>
                             <div className="col-lg-3">
                               <div className="stat_item">
-                                <img src={complete_icon} />
+                                {/* <img src={complete_icon} /> */}
                                 <div className="stat_text stat_1">
                                   <label>Completed</label>
                                   <p>190</p>
@@ -75,7 +69,7 @@ const Reports = () => {
                             </div>
                             <div className="col-lg-3">
                               <div className="stat_item">
-                                <img src={cancelled_icon} />
+                                {/* <img src={cancelled_icon} /> */}
                                 <div className="stat_text stat_5">
                                   <label>Cancelled</label>
                                   <p>10</p>
@@ -84,7 +78,7 @@ const Reports = () => {
                             </div>
                             <div className="col-lg-3">
                               <div className="stat_item">
-                                <img src={revenue_icon} />
+                                {/* <img src={revenue_icon} /> */}
                                 <div className="stat_text stat_6">
                                   <label>Total Revenue</label>
                                   <p>₹25000</p>
@@ -318,7 +312,7 @@ const Reports = () => {
                           <div className="row">
                             <div className="col-lg-3">
                               <div className="stat_item">
-                                <img src={total_appoint_icon} />
+                                {/* <img src={total_appoint_icon} /> */}
                                 <div className="stat_text stat_4">
                                   <label>Total Appointments</label>
                                   <p>200</p>
@@ -327,7 +321,7 @@ const Reports = () => {
                             </div>
                             <div className="col-lg-3">
                               <div className="stat_item">
-                                <img src={complete_icon} />
+                                {/* <img src={complete_icon} /> */}
                                 <div className="stat_text stat_1">
                                   <label>Completed</label>
                                   <p>190</p>
@@ -336,7 +330,7 @@ const Reports = () => {
                             </div>
                             <div className="col-lg-3">
                               <div className="stat_item">
-                                <img src={cancelled_icon} />
+                                {/* <img src={cancelled_icon} /> */}
                                 <div className="stat_text stat_5">
                                   <label>Cancelled</label>
                                   <p>10</p>
@@ -345,7 +339,7 @@ const Reports = () => {
                             </div>
                             <div className="col-lg-3">
                               <div className="stat_item">
-                                <img src={revenue_icon} />
+                                {/* <img src={revenue_icon} /> */}
                                 <div className="stat_text stat_6">
                                   <label>Total Revenue</label>
                                   <p>₹25000</p>

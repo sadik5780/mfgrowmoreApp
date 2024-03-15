@@ -5,7 +5,6 @@ import email_icon from "../../assets/images/icons/email.svg";
 import user_icon from "../../assets/images/icons/user_icon.svg";
 import otp_icon from "../../assets/images/icons/otp_icon.svg";
 import telephone from "../../assets/images/icons/telephone.svg";
-import login_img from "../../assets/images/login_img_1.svg";
 import { Link, useNavigate } from "react-router-dom";
 import { DarkButton } from "../commonComponents/commonComp";
 
@@ -115,7 +114,7 @@ const SignUp = () => {
               </div>
               <div className="img-container">
                 <div className="big-img">
-                  <img src={login_img} alt="" />
+                  {/* <img src={login_img} alt="" /> */}
                 </div>
                 <div>
                   <h2>Sign in to Veterianry App</h2>
