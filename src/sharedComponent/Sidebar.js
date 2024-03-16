@@ -67,74 +67,33 @@ const Sidebar = () => {
               <div className="sidebarLinks">
                 <Link to="/Dashboard" className='targetLink' onClick={mobileSidebarOff}>
                   <div className="dashboardLink">
-                    <img src={currentRoute === "/Dashboard" ? dashboardActive : dashboard} alt="" />
                     <p className={currentRoute === "/Dashboard" ? "activeTxt" : "deActiveTxt"}>Dashboard</p>
                     <img src={currentRoute === "/Dashboard" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>
               </div>
               {/* Customer Details */}
-              {/* <div className="sidebarLinks">
+              <div className="sidebarLinks">
                 <Link to="/CustomerDetails" className='targetLink' onClick={mobileSidebarOff}>
                   <div className="dashboardLink">
-                    <img src={currentRoute === "/CustomerDetails" 
-                      ? doctorsActive : doctors} alt="" />
                     <p className={currentRoute === "/Doctors" ||
                       currentRoute === "/CustomerDetails" ? "activeTxt" : "deActiveTxt"}>Customer Details</p>
                     <img src={currentRoute === "/CustomerDetails" ||
                       currentRoute === "/CustomerDetails" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>
-              </div> */}
+              </div>
               {/* Appointments */}
-              {/* <Accordion.Item eventKey="0">
-                <Accordion.Header onClick={() => {
-                  setPharmacy(!pharmacy);
-                  setAdminS(false);
-                  setReport(false)
-                  setVetPets(false);
-                }}>
-                  <Link to="#" className='targetLink'>
-                    <div className="sidebarLinks">
-                      <div className="dashboardLink">
-                        <img src={currentRoute === "/AtClinic" ||
-                          currentRoute === "/Video"
-                          ? PharmacyActive : Pharmacy} alt="" />
-                        <p className={currentRoute === "/AtClinic" ||
-                          currentRoute === "/Video" ? "activeTxt" : "deActiveTxt"}>Appointments</p>
-                        <img src={currentRoute === "/AtClinic" ||
-                          currentRoute === "/Video" ? activeImg : null} className='activelogo' alt="" />
-                        
-                      </div>
-                    </div>
-                  </Link>
-                </Accordion.Header>
-                <Accordion.Body>
-                  <div className="menu_items">
-                    <Link to="/AtClinic" className='menuLink' onClick={mobileSidebarOff}>
-                      <div className={currentRoute === "/AtClinic" ? "activeTxt" : "deActiveTxt"}>
-                      At Clinic
-                      </div>
-                    </Link>
-                    <Link to="/Video" className='menuLink' onClick={mobileSidebarOff}>
-                      <div className={currentRoute === "/Video" ? "activeTxt" : "deActiveTxt"}>
-                      Video
-                      </div>
-                    </Link>
-                  </div>
-                </Accordion.Body>
-              </Accordion.Item> */}
               
               {/* Reports */}
-              {/* <div className="sidebarLinks">
+              <div className="sidebarLinks">
                 <Link to="/Reports" className='targetLink' onClick={mobileSidebarOff}>
                   <div className="dashboardLink">
-                    <img src={currentRoute === "/Reports" ? vacinatorsActive : vacinators} alt="" />
                     <p className={currentRoute === "/Reports" ? "activeTxt" : "deActiveTxt"}>Reports</p>
                     <img src={currentRoute === "/Reports" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>
-              </div> */}
+              </div>
               {/* Transaction Details */}
               {/* <div className="sidebarLinks">
                 <Link to="/TransactionDetails" className='targetLink' onClick={mobileSidebarOff}>

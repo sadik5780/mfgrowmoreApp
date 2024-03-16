@@ -4,14 +4,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import roundCircle from "../assets/images/headerIcons/headerCircle.svg";
 import bell from "../assets/images/headerIcons/bell.svg";
-import dd_fix_icon from "../assets/images/headerIcons/dd_fix_icon.svg";
 import profile_img from "../assets/images/profile_img.svg";
-import status_available from "../assets/images/headerIcons/status_available.svg";
-import status_away from "../assets/images/headerIcons/status_away.svg";
-import status_busy from "../assets/images/headerIcons/status_busy.svg";
 import status_offline from "../assets/images/headerIcons/status_offline.svg";
-import address_icon from "../assets/images/headerIcons/address_icon.svg";
-import address_icon2 from "../assets/images/headerIcons/address_icon2.svg";
 import profile_setting_icon from "../assets/images/headerIcons/profile_setting_icon.svg";
 import logout_icon from "../assets/images/headerIcons/logout_icon.svg";
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -158,94 +152,12 @@ const Header = () => {
                   <div className="pd_profile_description_wrapper">
                     <div className="pdf_img">
                       <img src={profile_img} alt="" />
-                      <span>
-                        <img src={status.imageName ? status.imageName : status_offline} alt="" />
-                      </span>
                     </div>
                     <div className="pdf_name_status">
-                      <p className="name" >Floyd Miles</p>
-                      <p className="post">Orthopedic</p>
-                      <div className="pd_status_selection">
-                        <Dropdown>
-                          <Dropdown.Toggle id="dropdown-basic">
-                            <div>
-                              <img src={dd_fix_icon} alt="" />
-                              {status.status_title ? status.status_title : "Offline"} </div>
-                          </Dropdown.Toggle>
-
-                          <Dropdown.Menu>
-                            <Dropdown.Item onClick={() => {
-                              setStatus({
-                                imageName: status_available,
-                                status_title: "Available"
-                              })
-                            }}>
-                              <div>
-                                <img src={status_available} alt="" />
-                                Available
-                              </div>
-                            </Dropdown.Item>
-                            <Dropdown.Item onClick={() => {
-                              setStatus({
-                                imageName: status_away,
-                                status_title: "Away"
-                              })
-                            }}><div>
-                                <img src={status_away} alt="" />
-                                Away
-                              </div></Dropdown.Item>
-                            <Dropdown.Item onClick={() => {
-                              setStatus({
-                                imageName: status_busy,
-                                status_title: "Busy"
-                              })
-                            }}><div>
-                                <img src={status_busy} alt="" />
-                                Busy
-                              </div></Dropdown.Item>
-                            <Dropdown.Item onClick={() => {
-                              setStatus({
-                                imageName: status_offline,
-                                status_title: "Offline"
-                              })
-                            }}><div>
-                                <img src={status_offline} alt="" />
-                                Offline
-                              </div></Dropdown.Item>
-                          </Dropdown.Menu>
-                        </Dropdown>
-                      </div>
+                      <p className="name" >Am Shaikh</p>
+                      <p className="post">Super Admin</p>
                     </div>
-                  </div>
-                  <div className="pd_status_selection mt-2 border_bottom">
-                    <Dropdown>
-                      <Dropdown.Toggle id="dropdown-basic">
-                        <div>
-                          <img src={address_icon} alt="" />
-                          At, Visrantwadi Clinic, Pune </div>
-                      </Dropdown.Toggle>
-
-                      <Dropdown.Menu>
-                        <Dropdown.Item >
-                          <div>
-                            <img src={address_icon2} alt="" className="add_icon" />
-                            Vishrantwadi, Kalas Road,
-                            Pune.
-                          </div>
-                        </Dropdown.Item>
-                        <Dropdown.Item ><div>
-                          <img src={address_icon2} alt="" className="add_icon" />
-                          Vishrantwadi, Kalas Road,
-                          Pune.
-                        </div></Dropdown.Item>
-                        <Dropdown.Item ><div>
-                          <img src={address_icon2} alt="" className="add_icon" />
-                          Vishrantwadi, Kalas Road,
-                          Pune.
-                        </div></Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </div>
+                  </div> 
                   <div className="pd_status_selection mt-2 border_bottom2">
                     <Dropdown>
                       <Dropdown.Toggle id="dropdown-basic">

@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import { Tab, Tabs } from "react-bootstrap";
-import CalenderComp from "./CalenderComp";
 import ic_hospital from "../../assets/images/ic_hospital.svg";
 import dog from "../../assets/images/dog.svg";
 import ic_clock from "../../assets/images/ic_clock.svg";
@@ -137,11 +136,6 @@ const AtClinic = () => {
           {viewCalender && (
             <div className="all-appoimt-wrapper">
               <div className="row gx-3">
-                <div className="col-md-8">
-                  <div className="left">
-                    <CalenderComp />
-                  </div>
-                </div>
                 <div className="col-md-4">
                   <div className="right">
                     <div className="top-heading">

@@ -53,7 +53,7 @@ const Reports = () => {
                               <div className="stat_item">
                                 {/* <img src={total_appoint_icon} /> */}
                                 <div className="stat_text stat_4">
-                                  <label>Total Appointments</label>
+                                  <label>Total Customers</label>
                                   <p>200</p>
                                 </div>
                               </div>
@@ -108,9 +108,8 @@ const Reports = () => {
                           <tbody>
                             <tr>
                               <td>1</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -129,9 +128,8 @@ const Reports = () => {
                             </tr>
                             <tr>
                               <td>2</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -150,9 +148,8 @@ const Reports = () => {
                             </tr>
                             <tr>
                               <td>3</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -167,9 +164,8 @@ const Reports = () => {
                             </tr>
                             <tr>
                               <td>4</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -190,7 +186,6 @@ const Reports = () => {
                               <td>5</td>
                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -209,9 +204,8 @@ const Reports = () => {
                             </tr>
                             <tr>
                               <td>6</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -237,13 +231,13 @@ const Reports = () => {
                     <div className="patient_stat_wrapper">
                       <div className="lc_top">
                         <div className="lct_header_wrapper">
-                          <p>Patients</p>
+                          <p>Customers</p>
                         </div>
                         <div className="pt_stat_item pts_1">
                           <div className="row">
                             <div className="col-md-4 col-sm-4">
                               <div className="left">
-                                <label htmlFor="">New Joined</label>
+                                <label htmlFor="">New</label>
                                 <p>120</p>
                               </div>
                             </div>
@@ -262,7 +256,7 @@ const Reports = () => {
                           <div className="row">
                             <div className="col-md-4 col-sm-4">
                               <div className="left">
-                                <label htmlFor="">Old Patient</label>
+                                <label htmlFor="">Old</label>
                                 <p>140</p>
                               </div>
                             </div>
@@ -285,15 +279,15 @@ const Reports = () => {
                       <DonutChart />
                       <div className="Chart_labels">
                         <div className="cl_item">
-                          <p>Received</p>
+                          <p>Pre-Investment</p>
                           <p>25%</p>
                         </div>
                         <div className="cl_item">
-                          <p>Subscriptions</p>
+                          <p>Daily SIP</p>
                           <p>25%</p>
                         </div>
                         <div className="cl_item">
-                          <p>Withdrawl</p>
+                          <p>Monthly SIP</p>
                           <p>50%</p>
                         </div>
                       </div>
@@ -303,7 +297,7 @@ const Reports = () => {
               </div>
             </Tab.Pane>
             <Tab.Pane eventKey="2">
-              <div className="dashboard_wrapper">
+            <div className="dashboard_wrapper" id="reports-wrapper">
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="row">
@@ -314,7 +308,7 @@ const Reports = () => {
                               <div className="stat_item">
                                 {/* <img src={total_appoint_icon} /> */}
                                 <div className="stat_text stat_4">
-                                  <label>Total Appointments</label>
+                                  <label>Total Customers</label>
                                   <p>200</p>
                                 </div>
                               </div>
@@ -369,9 +363,8 @@ const Reports = () => {
                           <tbody>
                             <tr>
                               <td>1</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -390,9 +383,8 @@ const Reports = () => {
                             </tr>
                             <tr>
                               <td>2</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -411,9 +403,8 @@ const Reports = () => {
                             </tr>
                             <tr>
                               <td>3</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -428,9 +419,8 @@ const Reports = () => {
                             </tr>
                             <tr>
                               <td>4</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -451,7 +441,6 @@ const Reports = () => {
                               <td>5</td>
                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -470,9 +459,8 @@ const Reports = () => {
                             </tr>
                             <tr>
                               <td>6</td>
-                              <td>
+                               <td>
                                 <label htmlFor="" className="photo">
-                                  <img src={cat} alt="" />
                                   Ronald Sharma
                                 </label>
                               </td>
@@ -487,6 +475,7 @@ const Reports = () => {
                             </tr>
                           </tbody>
                         </table>
+
                       </div>
                       <div className="pagination_wrapper">
                         <p>Showing 1-10 of 100</p>
@@ -497,13 +486,13 @@ const Reports = () => {
                     <div className="patient_stat_wrapper">
                       <div className="lc_top">
                         <div className="lct_header_wrapper">
-                          <p>Patients</p>
+                          <p>Customers</p>
                         </div>
                         <div className="pt_stat_item pts_1">
                           <div className="row">
                             <div className="col-md-4 col-sm-4">
                               <div className="left">
-                                <label htmlFor="">New Joined</label>
+                                <label htmlFor="">New</label>
                                 <p>120</p>
                               </div>
                             </div>
@@ -522,7 +511,7 @@ const Reports = () => {
                           <div className="row">
                             <div className="col-md-4 col-sm-4">
                               <div className="left">
-                                <label htmlFor="">Old Patient</label>
+                                <label htmlFor="">Old</label>
                                 <p>140</p>
                               </div>
                             </div>
@@ -545,15 +534,15 @@ const Reports = () => {
                       <DonutChart />
                       <div className="Chart_labels">
                         <div className="cl_item">
-                          <p>Received</p>
+                          <p>Pre-Investment</p>
                           <p>25%</p>
                         </div>
                         <div className="cl_item">
-                          <p>Subscriptions</p>
+                          <p>Daily SIP</p>
                           <p>25%</p>
                         </div>
                         <div className="cl_item">
-                          <p>Withdrawl</p>
+                          <p>Monthly SIP</p>
                           <p>50%</p>
                         </div>
                       </div>

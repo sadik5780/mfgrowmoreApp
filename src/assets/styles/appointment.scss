@@ -25,9 +25,20 @@
       border-radius: 0;
       background: none;
       padding-bottom: 5px;
-      border-bottom: 2px solid var(--text_dark_blue_042486);
+      // border-bottom: 2px solid var(--text_dark_blue_042486);
       font-weight: 600;
       color: var(--text_dark_blue_042486);
+      position: relative;
+
+      &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 3px;
+        background-color: var(--text_dark_blue_042486);
+      }
     }
 
     .nav-link {
@@ -140,14 +151,20 @@
     justify-content: space-between;
     .search-filter-left {
       display: flex;
-      width: 60%;
+      width: 100%;
+      justify-content: space-between;
       .fltr-btn {
         margin-left: 20px;
         border: none;
         background-color: var(--bg_White);
         border-radius: 10px;
-        padding: 0 10px;
+        padding: 0 15px;
         height: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.28px;
+        border-radius: 10px;
+        margin-right: 10px;
         img {
         }
       }
@@ -163,7 +180,7 @@
     }
     label {
       color: var(--text_light_table_heading_A3AED0);
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 400;
       span {
         margin-left: 5px;
@@ -181,7 +198,7 @@
     .left {
       border-radius: 20px;
       background-color: var(--bg_White);
-      padding: 20px;
+      padding: 10px 15px;
       .aap-heading {
         border-bottom: 1px solid var(--text_light_F6F6F6);
         margin-bottom: 20px;
@@ -204,9 +221,9 @@
         margin-bottom: 20px;
       }
       .photo-video-wrapper {
-        margin-top: 10px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid var(--text_light_F6F6F6);
+        // margin-top: 10px;
+        padding-bottom: 10px;
+        // border-top: 1px solid var(--text_light_F6F6F6);
         .photo {
           height: 100px;
           width: 100%;
@@ -395,7 +412,7 @@
   background-color: var(--bg_White);
   border: none;
   height: 40px;
-  width: 70%;
+  width: 40%;
   /* Card */
   box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
   &::placeholder {

@@ -11,7 +11,6 @@ import Sidebar from "./sharedComponent/Sidebar";
 import Header from "./sharedComponent/Header"; 
 import CustomerDetails from "./pages/CustomerDetails/CustomerDetails";
 import AtClinic from "./pages/Appointments/AtClinic";
-import Video from "./pages/Appointments/Video";
 import Reports from "./pages/Reports/Reports";
 import TransactionDetails from "./pages/TransactionDetails/TransactionDetails";
 import Subscription from "./pages/Subscription/Subscription";
@@ -67,7 +66,6 @@ function App() {
           <Route path="AddTeam" element={<AddTeam />} />
           {/* ============== APPOINTMENT ============= */}
           <Route path="AtClinic" element={<AtClinic />} />
-          <Route path="Video" element={<Video />} />
         </Routes>
       </div>
     </div>
