@@ -18,14 +18,7 @@ const ForgotPass = () => {
         <div className="login-left">
           <img src={logo} alt="" className="login_img" />
           <div className="signinForm">
-            <h1 className="signInTxt">Forgot your password ?</h1>
-            <p className="signInDesc">
-              If you forgot your password, Don't Worry ! <br /> You can request
-              <Link className="link_common" to="/SignUp">
-                {" "}
-                New here !
-              </Link>
-            </p>
+            <h1 className="signInTxt">Forgot your password ?</h1> 
             <div className="inputBox">
               <button className="otpbtn">Request OTP</button>
               <button className="resendotpbtn">Re send OTP (26)</button>

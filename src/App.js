@@ -5,7 +5,6 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Login from "./pages/Auth/Login";
 import ForgotPass from "./pages/Auth/ForgotPass";
 import ResetPass from "./pages/Auth/ResetPass";
-import SignUp from "./pages/Auth/SignUp"; 
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Sidebar from "./sharedComponent/Sidebar";
 import Header from "./sharedComponent/Header"; 
@@ -29,7 +28,6 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/ForgotPass" element={<ForgotPass />} />
           <Route path="/ResetPass" element={<ResetPass />} />
-          <Route path="/SignUp" element={<SignUp />} /> 
         </Routes>
       </div>
       <div className="main-wrapper">

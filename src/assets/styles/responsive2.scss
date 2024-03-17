@@ -707,6 +707,7 @@
     .authMain .signinForm {
         width: calc(100vw - 54px) !important;
         height: 100%;
+        padding-top: 120px;
     }
 
     .login {
@@ -976,12 +977,19 @@
     .Subscription_wrapper .Subscription .subscription_item .sub_item_right a {
         margin: 7px 0 0;
     }
+    .authMain .signinForm .signInTxt {
+        font-size: 27px;
+    }
 }
 
 @media all and (max-width: 360px) {
     .authMain .signinForm {
         width: calc(100vw - 54px) !important;
         height: 100%;
+    }
+
+    .authMain .signinForm .signInTxt {
+        font-size: 27px;
     }
 
     .login {

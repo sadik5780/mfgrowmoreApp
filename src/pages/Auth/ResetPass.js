@@ -17,13 +17,7 @@ const ResetPass = () => {
         <div className="login-left">
           <img src={logo} alt="" className="login_img" />
           <div className="signinForm">
-            <h1 className="signInTxt">Reset your password ?</h1>
-            <p className="signInDesc">
-              If you forgot your password, Don't Worry ! <br /> You can request
-              <Link className="link_common" to="/ForgotPass"> 
-                New here !
-              </Link>
-            </p>
+            <h1 className="signInTxt">Reset your password ?</h1> 
             <div className="inputBox">
               <label htmlFor="" className="emailLabel">
                 Create New Password

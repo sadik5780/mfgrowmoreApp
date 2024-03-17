@@ -22,12 +22,6 @@ const Login = () => {
           <img src={logo} alt="" className="login_img" />
           <div className="signinForm">
             <h1 className="signInTxt">Sign in</h1>
-            <p className="signInDesc">
-              If you don't have an account registered <br /> You can
-              <Link className="link_common" to="/SignUp">
-                Register here !
-              </Link>
-            </p>
             <div className="inputBox">
               <label htmlFor="" className="emailLabel">
                 Email

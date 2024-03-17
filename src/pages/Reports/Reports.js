@@ -35,6 +35,9 @@ const Reports = () => {
             <Nav.Item>
               <Nav.Link eventKey="2">Monthly</Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="3">Pre Investment</Nav.Link>
+            </Nav.Item>
 
 
           </Nav>
@@ -62,7 +65,7 @@ const Reports = () => {
                               <div className="stat_item">
                                 {/* <img src={complete_icon} /> */}
                                 <div className="stat_text stat_1">
-                                  <label>Completed</label>
+                                  <label>New Customers</label>
                                   <p>190</p>
                                 </div>
                               </div>
@@ -71,7 +74,7 @@ const Reports = () => {
                               <div className="stat_item">
                                 {/* <img src={cancelled_icon} /> */}
                                 <div className="stat_text stat_5">
-                                  <label>Cancelled</label>
+                                  <label>Old Customers</label>
                                   <p>10</p>
                                 </div>
                               </div>
@@ -102,7 +105,7 @@ const Reports = () => {
                               <th>Transaction ID</th>
                               <th>Date</th>
                               <th>Amount</th>
-                              <th>Status</th>
+                              
                             </tr>
                           </thead>
                           <tbody>
@@ -116,14 +119,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img
-                                  src={ic_completed}
-                                  className="status-ic"
-                                  alt=""
-                                />
-                                Completed
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -136,14 +132,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img
-                                  src={ic_completed}
-                                  className="status-ic"
-                                  alt=""
-                                />
-                                Completed
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -156,10 +145,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img src={ic_rejected} className="status-ic" alt="" />
-                                Cancelled
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -172,14 +158,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img
-                                  src={ic_completed}
-                                  className="status-ic"
-                                  alt=""
-                                />
-                                Completed
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -192,14 +171,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img
-                                  src={ic_completed}
-                                  className="status-ic"
-                                  alt=""
-                                />
-                                Completed
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -212,10 +184,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img src={ic_rejected} className="status-ic" alt="" />
-                                Cancelled
-                              </td>
+                              
 
                             </tr>
                           </tbody>
@@ -228,49 +197,7 @@ const Reports = () => {
                     </div>
                   </div>
                   <div className="col-lg-4">
-                    <div className="patient_stat_wrapper">
-                      <div className="lc_top">
-                        <div className="lct_header_wrapper">
-                          <p>Customers</p>
-                        </div>
-                        <div className="pt_stat_item pts_1">
-                          <div className="row">
-                            <div className="col-md-4 col-sm-4">
-                              <div className="left">
-                                <label htmlFor="">New</label>
-                                <p>120</p>
-                              </div>
-                            </div>
-                            <div className="col-md-8 col-sm-8">
-                              <div className="right">
-                                <div class="progress">
-                                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
-                        </div>
-                        <div className="pt_stat_item pts_2">
-                          <div className="row">
-                            <div className="col-md-4 col-sm-4">
-                              <div className="left">
-                                <label htmlFor="">Old</label>
-                                <p>140</p>
-                              </div>
-                            </div>
-                            <div className="col-md-8 col-sm-8">
-                              <div className="right">
-                                <div class="progress">
-                                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    
 
                     <div className="donut_chart_wrapper">
                       <div className="dc_header">
@@ -317,7 +244,7 @@ const Reports = () => {
                               <div className="stat_item">
                                 {/* <img src={complete_icon} /> */}
                                 <div className="stat_text stat_1">
-                                  <label>Completed</label>
+                                  <label>New Customers</label>
                                   <p>190</p>
                                 </div>
                               </div>
@@ -326,7 +253,7 @@ const Reports = () => {
                               <div className="stat_item">
                                 {/* <img src={cancelled_icon} /> */}
                                 <div className="stat_text stat_5">
-                                  <label>Cancelled</label>
+                                  <label>Old Customers</label>
                                   <p>10</p>
                                 </div>
                               </div>
@@ -357,7 +284,7 @@ const Reports = () => {
                               <th>Transaction ID</th>
                               <th>Date</th>
                               <th>Amount</th>
-                              <th>Status</th>
+                              
                             </tr>
                           </thead>
                           <tbody>
@@ -371,14 +298,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img
-                                  src={ic_completed}
-                                  className="status-ic"
-                                  alt=""
-                                />
-                                Completed
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -391,14 +311,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img
-                                  src={ic_completed}
-                                  className="status-ic"
-                                  alt=""
-                                />
-                                Completed
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -411,10 +324,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img src={ic_rejected} className="status-ic" alt="" />
-                                Cancelled
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -427,14 +337,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img
-                                  src={ic_completed}
-                                  className="status-ic"
-                                  alt=""
-                                />
-                                Completed
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -447,14 +350,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img
-                                  src={ic_completed}
-                                  className="status-ic"
-                                  alt=""
-                                />
-                                Completed
-                              </td>
+                              
 
                             </tr>
                             <tr>
@@ -467,10 +363,7 @@ const Reports = () => {
                               <td>12345678900</td>
                               <td>02-02-2023</td>
                               <td>₹500</td>
-                              <td>
-                                <img src={ic_rejected} className="status-ic" alt="" />
-                                Cancelled
-                              </td>
+                              
 
                             </tr>
                           </tbody>
@@ -483,49 +376,186 @@ const Reports = () => {
                     </div>
                   </div>
                   <div className="col-lg-4">
-                    <div className="patient_stat_wrapper">
-                      <div className="lc_top">
-                        <div className="lct_header_wrapper">
-                          <p>Customers</p>
+                    
+
+                    <div className="donut_chart_wrapper">
+                      <div className="dc_header">
+                        <p>Payment Analytics</p>
+                      </div>
+                      <DonutChart />
+                      <div className="Chart_labels">
+                        <div className="cl_item">
+                          <p>Pre-Investment</p>
+                          <p>25%</p>
                         </div>
-                        <div className="pt_stat_item pts_1">
+                        <div className="cl_item">
+                          <p>Daily SIP</p>
+                          <p>25%</p>
+                        </div>
+                        <div className="cl_item">
+                          <p>Monthly SIP</p>
+                          <p>50%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Tab.Pane>
+            <Tab.Pane eventKey="3">
+            <div className="dashboard_wrapper" id="reports-wrapper">
+                <div className="row">
+                  <div className="col-lg-12">
+                    <div className="row">
+                      <div className="col-md-12">
+                        <div className="dashboard_statistics_wrapper">
                           <div className="row">
-                            <div className="col-md-4 col-sm-4">
-                              <div className="left">
-                                <label htmlFor="">New</label>
-                                <p>120</p>
-                              </div>
-                            </div>
-                            <div className="col-md-8 col-sm-8">
-                              <div className="right">
-                                <div class="progress">
-                                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="col-lg-3">
+                              <div className="stat_item">
+                                {/* <img src={total_appoint_icon} /> */}
+                                <div className="stat_text stat_4">
+                                  <label>Total Customers</label>
+                                  <p>200</p>
                                 </div>
                               </div>
                             </div>
-                          </div>
-
-
-                        </div>
-                        <div className="pt_stat_item pts_2">
-                          <div className="row">
-                            <div className="col-md-4 col-sm-4">
-                              <div className="left">
-                                <label htmlFor="">Old</label>
-                                <p>140</p>
-                              </div>
-                            </div>
-                            <div className="col-md-8 col-sm-8">
-                              <div className="right">
-                                <div class="progress">
-                                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div className="col-lg-3">
+                              <div className="stat_item">
+                                {/* <img src={complete_icon} /> */}
+                                <div className="stat_text stat_1">
+                                  <label>New Customers</label>
+                                  <p>190</p>
                                 </div>
                               </div>
                             </div>
+                            <div className="col-lg-3">
+                              <div className="stat_item">
+                                {/* <img src={cancelled_icon} /> */}
+                                <div className="stat_text stat_5">
+                                  <label>Old Customers</label>
+                                  <p>10</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-lg-3">
+                              <div className="stat_item">
+                                {/* <img src={revenue_icon} /> */}
+                                <div className="stat_text stat_6">
+                                  <label>Total Revenue</label>
+                                  <p>₹25000</p>
+                                </div>
+                              </div>
+                            </div>
+
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div className="col-lg-8 mb-3">
+                    <div className="dashboard_wrapper2">
+                      <div className="table-wrapper table_wrapper_pagination dasboard-cust-tb-wrapper">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Sr. No</th>
+                              <th>Name</th>
+                              <th>Transaction ID</th>
+                              <th>Date</th>
+                              <th>Amount</th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                               <td>
+                                <label htmlFor="" className="photo">
+                                  Ronald Sharma
+                                </label>
+                              </td>
+                              <td>12345678900</td>
+                              <td>02-02-2023</td>
+                              <td>₹500</td>
+                              
+
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                               <td>
+                                <label htmlFor="" className="photo">
+                                  Ronald Sharma
+                                </label>
+                              </td>
+                              <td>12345678900</td>
+                              <td>02-02-2023</td>
+                              <td>₹500</td>
+                              
+
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                               <td>
+                                <label htmlFor="" className="photo">
+                                  Ronald Sharma
+                                </label>
+                              </td>
+                              <td>12345678900</td>
+                              <td>02-02-2023</td>
+                              <td>₹500</td>
+                              
+
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                               <td>
+                                <label htmlFor="" className="photo">
+                                  Ronald Sharma
+                                </label>
+                              </td>
+                              <td>12345678900</td>
+                              <td>02-02-2023</td>
+                              <td>₹500</td>
+                              
+
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>
+                                <label htmlFor="" className="photo">
+                                  Ronald Sharma
+                                </label>
+                              </td>
+                              <td>12345678900</td>
+                              <td>02-02-2023</td>
+                              <td>₹500</td>
+                              
+
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                               <td>
+                                <label htmlFor="" className="photo">
+                                  Ronald Sharma
+                                </label>
+                              </td>
+                              <td>12345678900</td>
+                              <td>02-02-2023</td>
+                              <td>₹500</td>
+                              
+
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                      <div className="pagination_wrapper">
+                        <p>Showing 1-10 of 100</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4">
+                    
 
                     <div className="donut_chart_wrapper">
                       <div className="dc_header">
