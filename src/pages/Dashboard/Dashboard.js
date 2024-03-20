@@ -17,7 +17,7 @@ const Dashboard = () => {
   const [revenueBar, setRevenueBar] = useState({
     options: {
       chart: {
-        type: "line",
+        type: "bar",
       },
       stroke: {
         curve: "smooth",
@@ -41,7 +41,7 @@ const Dashboard = () => {
   const [clientBar, setClientBar] = useState({
     options: {
       chart: {
-        type: "line",
+        type: "bar",
       },
       stroke: {
         curve: "smooth",
