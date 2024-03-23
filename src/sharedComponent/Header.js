@@ -134,7 +134,7 @@ const Header = () => {
               <img
                 src={roundCircle}
                 onClick={() => setClicked(!clicked)}
-                className="rounded-circle circleImg"
+                className="circleImg"
                 alt=""
               // onMouseOver={() => setIsHovering(true)}
               // onMouseOut={handleMouseOut}

@@ -16,6 +16,7 @@ import Subscription from "./pages/Subscription/Subscription";
 import MyProfile from "./pages/MyProfile/MyProfile";
 import AddClinic from "./pages/MyProfile/AddClinic";
 import AddTeam from "./pages/MyProfile/AddTeam";
+import Agreement from "./pages/Agreement/Agreement";
 
 function App() {
   const location = useLocation();
@@ -58,6 +59,7 @@ function App() {
           <Route path="TransactionDetails" element={<TransactionDetails />} />
           {/* ============== Subscription ============= */}
           <Route path="Subscription" element={<Subscription />} />
+          <Route path="Agreement" element={<Agreement />} />
           {/* ============== MyProfile ============= */}
           <Route path="MyProfile" element={<MyProfile />} /> 
           <Route path="AddClinic" element={<AddClinic />} />

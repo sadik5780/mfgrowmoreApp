@@ -1,11 +1,5 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../context/AppContext";
-import tc_patient_img1 from "../../assets/images/tc_patient_img1.svg";
-import tc_patient_img2 from "../../assets/images/tc_patient_img2.svg";
-import tc_patient_img3 from "../../assets/images/tc_patient_img3.svg";
-import tc_patient_img4 from "../../assets/images/tc_patient_img4.svg";
-import tc_patient_img5 from "../../assets/images/tc_patient_img5.svg";
-import tc_patient_img6 from "../../assets/images/tc_patient_img6.svg";
 import { motion } from "framer-motion";
 import Chart from "react-apexcharts";
 import { Link } from "react-router-dom";

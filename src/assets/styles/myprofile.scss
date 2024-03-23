@@ -1,23 +1,6 @@
 .myprofile_wrapper {
 
-    .btn_wrapper {
-        margin-top: 20px;
-        margin-left: auto;
-        width: 254px;
-        display: flex;
-
-        .cx-btn-light {
-            margin-right: 10px !important;
-            background-color: transparent;
-            border: 1px solid #34528A;
-            box-shadow: 14px 17px 40px 4px #7090B014;
-        }
-
-        .cx-btn-dark,
-        .cx-btn-light {
-            height: 40px;
-        }
-    }
+    
 
     .myprofile {
         border-width: 0px, 0px, 0px, 0px;
@@ -1208,5 +1191,24 @@
                 }
             }
         }
+    }
+}
+
+.btn_wrapper {
+    margin-top: 20px;
+    margin-left: auto;
+    width: 254px;
+    display: flex;
+
+    .cx-btn-light {
+        margin-right: 10px !important;
+        background-color: transparent;
+        border: 1px solid #34528A;
+        box-shadow: 14px 17px 40px 4px #7090B014;
+    }
+
+    .cx-btn-dark,
+    .cx-btn-light {
+        height: 40px;
     }
 }

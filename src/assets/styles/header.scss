@@ -5,17 +5,17 @@
 
     .top-header {
         background-color: var(--primary_dark_bg_34528A);
-        width: calc(100% - 310px);
+        width: calc(100% - 250px);
         height: 80px;
-        margin-left: 290px;
+        margin-left: 230px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: fixed;
         top: 20px;
         z-index: 10;
-        border-radius: 20px;
-        padding: 20px;
+        border-radius: 15px;
+        padding: 10px;
         // position: relative;
 
     }
@@ -318,6 +318,7 @@
 
             .circleImg {
                 cursor: pointer;
+                border-radius: 7px !important;
             }
         }
 

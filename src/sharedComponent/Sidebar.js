@@ -95,15 +95,14 @@ const Sidebar = () => {
                 </Link>
               </div>
               {/* Transaction Details */}
-              {/* <div className="sidebarLinks">
-                <Link to="/TransactionDetails" className='targetLink' onClick={mobileSidebarOff}>
-                  <div className="dashboardLink">
-                    <img src={currentRoute === "/TransactionDetails" ? AmbulanceActive : Ambulance} alt="" />
-                    <p className={currentRoute === "/TransactionDetails" ? "activeTxt" : "deActiveTxt"}>Transaction Details</p>
-                    <img src={currentRoute === "/TransactionDetails" ? activeImg : null} className='activelogo' alt="" />
+              <div className="sidebarLinks">
+                <Link to="/Agreement" className='targetLink' onClick={mobileSidebarOff}>
+                  <div className="dashboardLink"> 
+                    <p className={currentRoute === "/Agreement" ? "activeTxt" : "deActiveTxt"}>Agreement</p>
+                    <img src={currentRoute === "/Agreement" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>
-              </div> */}
+              </div>
               {/* Subscription */}
               {/* <div className="sidebarLinks">
                 <Link to="/Subscription" className='targetLink' onClick={mobileSidebarOff}>

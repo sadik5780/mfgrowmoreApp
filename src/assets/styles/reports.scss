@@ -554,3 +554,94 @@
         }
     }
 }
+
+
+.agreement {
+    .wrapper-main {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 10px;
+// Common Input Form Styling
+        .reg_id_fields {
+            padding-top: 15px;
+
+            .pass_text {
+                color: var(--primary_dark_bg_34528A);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                margin-right: auto;
+            }
+
+            .form-control {
+                border: 1px solid #dff1ec;
+                border-radius: 10px;
+                margin-top: 10px;
+                padding: 10px;
+
+                &::placeholder {
+                    color: #d8dceb;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        // Common Title Styling
+        .title_wrapper {
+            border-bottom: 1px solid #f6f6f6;
+
+            .title {
+                color: var(--primary_dark_bg_34528A);
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: -.02em;
+                line-height: 24px;
+            }
+        }
+
+        .create_id {
+
+
+
+            
+
+        }
+
+        .otp_wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 40px;
+                margin: 20px 0 20px 0;
+            }
+        }
+
+        .success {
+
+            .success_message {
+                span {
+                    color: var(--text_dark_blue_042486);
+                    font-weight: 600;
+                }
+
+                .username {}
+
+                .userId {}
+
+                .userPassword {}
+            }
+        }
+
+        .failure {
+            .failure_message {
+                color: var(--bg_dark_red);
+            }
+        }
+
+
+    }
+}
