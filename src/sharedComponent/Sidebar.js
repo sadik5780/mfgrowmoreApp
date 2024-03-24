@@ -98,7 +98,7 @@ const Sidebar = () => {
               <div className="sidebarLinks">
                 <Link to="/Agreement" className='targetLink' onClick={mobileSidebarOff}>
                   <div className="dashboardLink"> 
-                    <p className={currentRoute === "/Agreement" ? "activeTxt" : "deActiveTxt"}>Agreement</p>
+                    <p className={currentRoute === "/Agreement" ? "activeTxt" : "deActiveTxt"}>Agreements</p>
                     <img src={currentRoute === "/Agreement" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>

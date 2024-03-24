@@ -56,23 +56,27 @@ const CustomerDetails = () => {
               <input
                 type="text"
                 className="form-control serach-input"
-                placeholder="Search by Name, Specialist, Ratings, Visits..."
+                placeholder="Search by Name, Email, Contact..."
               />
-
-              <div className="dark-btns-wrapper search-filter">
-                <button className="fltr-btn">
-                  <img src={ic_export} alt="" />
-                </button>
-                <button
-                  className="dark-btns"
-                  onClick={() => {
-                    setcustomerList(false);
-                    setcustomerForm(true);
-                  }}
-                >
-                  Add Customer
-                </button>
-              </div>
+              <input
+                type="date"
+                className="form-control date-input mx-3"
+                // placeholder="Search by date"
+              />
+              <button className="fltr-btn">
+                <img src={ic_export} alt="" />
+              </button>
+            </div>
+            <div className="dark-btns-wrapper search-filter">
+              <button
+                className="dark-btns"
+                onClick={() => {
+                  setcustomerList(false);
+                  setcustomerForm(true);
+                }}
+              >
+                Add Customer
+              </button>
             </div>
           </div>
 
@@ -519,7 +523,7 @@ const CustomerDetails = () => {
                             XYZ Appart, Hno.22, Railway Station, Aurangabad
                           </label>
                         </div>
-                       <hr />
+                        <hr />
                         <div className="col-md-4">
                           <div>
                             <label htmlFor="" className="key">
@@ -623,7 +627,7 @@ const CustomerDetails = () => {
         <div className="all-appoimt-wrapper">
           <div className="row gx-3">
             <div className="col-md-4">
-             <p>Customer Form</p>
+              <p>Customer Form</p>
             </div>
           </div>
         </div>

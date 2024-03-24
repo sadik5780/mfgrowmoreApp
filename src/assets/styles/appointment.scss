@@ -151,7 +151,7 @@
     justify-content: space-between;
     .search-filter-left {
       display: flex;
-      width: 100%;
+      // width: 100%;
       justify-content: space-between;
       .fltr-btn {
         margin-left: 20px;
@@ -434,9 +434,9 @@
 }
 .table-wrapper {
   background-color: var(--bg_White);
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 20px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   .map-link {
     text-decoration: none;
     color: #34528a;

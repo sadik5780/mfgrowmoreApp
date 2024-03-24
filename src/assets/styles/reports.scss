@@ -561,9 +561,39 @@
         background-color: #fff;
         border-radius: 20px;
         padding: 10px;
-// Common Input Form Styling
+
+        // Common Input Form Styling
         .reg_id_fields {
             padding-top: 15px;
+
+            .imgPre_wrapper {
+                width: 100%;
+                height: 205px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 20px 0;
+                border: 1px solid #dff1ec;
+                border-radius: 20px;
+                margin-top: 35px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+
+                .removebtn {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                }
+            }
 
             .pass_text {
                 color: var(--primary_dark_bg_34528A);
@@ -600,13 +630,7 @@
             }
         }
 
-        .create_id {
-
-
-
-            
-
-        }
+        .create_id {}
 
         .otp_wrapper {
             display: flex;
@@ -644,4 +668,35 @@
 
 
     }
+}
+
+.date-input {
+    // padding-left: 30px;
+    border-radius: 10px;
+    background-color: var(--bg_White);
+    border: none;
+    height: 40px;
+    width: 40%;
+    box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+
+    &::placeholder, &::-ms-input-placeholder {
+        color: red !important;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.28px;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+input[type="date"]::before{
+    color: #999;
+    content: attr(placeholder);
+}
+.table-wrapper.left-table {
+    height: calc(100vh - 220px);
+    overflow-x: auto;
+    margin-bottom: 0;
 }
