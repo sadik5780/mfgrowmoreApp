@@ -153,8 +153,7 @@
       display: flex;
       // width: 100%;
       justify-content: space-between;
-      .fltr-btn {
-        margin-left: 20px;
+      .fltr-btn { 
         border: none;
         background-color: var(--bg_White);
         border-radius: 10px;
@@ -163,8 +162,7 @@
         font-size: 14px;
         font-weight: 500;
         letter-spacing: -0.28px;
-        border-radius: 10px;
-        margin-right: 10px;
+        border-radius: 10px; 
         img {
         }
       }
@@ -412,7 +410,7 @@
   background-color: var(--bg_White);
   border: none;
   height: 40px;
-  width: 40%;
+  width: 100%;
   /* Card */
   box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
   &::placeholder {
@@ -445,7 +443,7 @@
     margin-right: 5px;
   }
   table {
-    width: 100%;
+    width: 135%;
     .pending-txt {
       color: var(--text_gray_ADADAD);
       font-size: 12px;
@@ -500,6 +498,7 @@
       color: var(--text_light_table_heading_A3AED0);
       font-size: 12px;
       font-weight: 400;
+      text-align: center;
     }
   }
 }

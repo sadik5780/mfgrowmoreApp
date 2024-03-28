@@ -95,14 +95,50 @@ const Sidebar = () => {
                 </Link>
               </div>
               {/* Transaction Details */}
-              <div className="sidebarLinks">
+              {/* <div className="sidebarLinks">
                 <Link to="/Agreement" className='targetLink' onClick={mobileSidebarOff}>
                   <div className="dashboardLink"> 
                     <p className={currentRoute === "/Agreement" ? "activeTxt" : "deActiveTxt"}>Agreements</p>
                     <img src={currentRoute === "/Agreement" ? activeImg : null} className='activelogo' alt="" />
                   </div>
                 </Link>
-              </div>
+              </div> */}
+
+              <Accordion.Item eventKey="0">
+                <Accordion.Header onClick={() => {
+                  setPharmacy(!pharmacy);
+                  setAdminS(false);
+                  setReport(false)
+                  setVetPets(false);
+                }}>
+                  <Link to="#" className='targetLink'>
+                    <div className="sidebarLinks">
+                      <div className="dashboardLink"> 
+                        <p className={currentRoute === "/PreInvestment" ||
+                          currentRoute === "/Sip" ? "activeTxt" : "deActiveTxt"}>Agreement</p>
+                        <img src={currentRoute === "/PreInvestment" ||
+                          currentRoute === "/Sip" ? activeImg : null} className='activelogo' alt="" />
+                        {/* <img src={pharmacy ? arrowAActive : rightArrow
+                        } className='arrowSetting' alt="" /> */}
+                      </div>
+                    </div>
+                  </Link>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="menu_items">
+                    <Link to="/PreInvestment" className='menuLink' onClick={mobileSidebarOff}>
+                      <div className={currentRoute === "/PreInvestment" ? "activeTxt" : "deActiveTxt"}>
+                      Pre Investment
+                      </div>
+                    </Link>
+                    <Link to="/Sip" className='menuLink' onClick={mobileSidebarOff}>
+                      <div className={currentRoute === "/Sip" ? "activeTxt" : "deActiveTxt"}>
+                      SIP
+                      </div>
+                    </Link>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
               {/* Subscription */}
               {/* <div className="sidebarLinks">
                 <Link to="/Subscription" className='targetLink' onClick={mobileSidebarOff}>
