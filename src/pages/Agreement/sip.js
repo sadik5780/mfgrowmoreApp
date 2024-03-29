@@ -11,11 +11,15 @@ import ic_export from "../../assets/images/icons/export_icon.svg";
 import { motion } from "framer-motion";
 import { DarkButton, DonutChart } from "../commonComponents/commonComp";
 import { Link } from "react-router-dom";
+import ic_back_arrow from "../../assets/images/ic_back_arrow.svg";
 import IdCreateForm from "./IdCreateForm";
 
 const Sip = () => {
   const [viewAgreementList, setviewAgreementList] = useState(true);
-  const [showIdCreateForm, setshowIdCreateForm] = useState(true);
+  const [showIdCreateForm, setshowIdCreateForm] = useState(false);
+  const [showResultTitle, setshowResultTitle] = useState(false);
+  const [showResultDaily, setshowResultDaily] = useState(false);
+  const [showResultMonthly, setshowResultMonthly] = useState(false);
 
   const aninations = {
     initial: { opacity: 0, x: 400 },
@@ -78,12 +82,10 @@ const Sip = () => {
                           className="tob_nav_pills d-flex"
                         >
                           <Nav.Item>
-                            <Nav.Link eventKey="1">
-                              Recent Transactions
-                            </Nav.Link>
+                            <Nav.Link eventKey="1">Daily SIP</Nav.Link>
                           </Nav.Item>
                           <Nav.Item>
-                            <Nav.Link eventKey="2">Upcoming Payments</Nav.Link>
+                            <Nav.Link eventKey="2">Monthly SIP</Nav.Link>
                           </Nav.Item>
                         </Nav>
                         <Link to="#" className="export_button custom_border">
@@ -98,109 +100,70 @@ const Sip = () => {
                                     <tr>
                                       <th>Sr. No</th>
                                       <th>Name</th>
-                                      <th>Date</th>
-                                      <th>Transaction ID</th>
-                                      <th>Description</th>
+                                      <th>In Date</th>
+                                      <th>Out Date</th>
+                                      <th>Mature Date</th>
                                       <th>Amount</th>
-                                      <th>Status</th>
+                                      <th>Contact</th>
+                                      <th>Address</th>
+                                      <th>Email</th>
+                                      <th>%</th>
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    <tr>
+                                    <tr
+                                      onClick={() => {
+                                        setviewAgreementList(false);
+                                        setshowResultTitle(true);
+                                        setshowResultDaily(true);
+                                      }}
+                                    >
                                       <td>1</td>
                                       <td>Ronald Sharma</td>
                                       <td>02-02-2023</td>
-                                      <td>12345678900</td>
-                                      <td>Clinic</td>
-                                      <td>₹500</td>
-                                      <td>
-                                        <img
-                                          src={ic_completed}
-                                          className="status-ic"
-                                          alt=""
-                                        />
-                                        Completed
-                                      </td>
+                                      <td>02-02-2023</td>
+                                      <td>02-02-2023</td>
+                                      <td>₹300</td>
+                                      <td>7788991122</td>
+                                      <td>Silk Mills Colony, Auranbagad</td>
+                                      <td>john@mail.com</td>
+                                      <td>30%</td>
                                     </tr>
                                     <tr>
                                       <td>2</td>
                                       <td>Ronald Sharma</td>
                                       <td>02-02-2023</td>
-                                      <td>12345678900</td>
-                                      <td>Video Call</td>
-                                      <td>₹500</td>
-                                      <td>
-                                        <img
-                                          src={ic_completed}
-                                          className="status-ic"
-                                          alt=""
-                                        />
-                                        Completed
-                                      </td>
+                                      <td>02-02-2023</td>
+                                      <td>02-02-2023</td>
+                                      <td>₹200</td>
+                                      <td>7788991122</td>
+                                      <td>Silk Mills Colony, Auranbagad</td>
+                                      <td>john@mail.com</td>
+                                      <td>30%</td>
                                     </tr>
                                     <tr>
                                       <td>3</td>
                                       <td>Ronald Sharma</td>
                                       <td>02-02-2023</td>
-                                      <td>12345678900</td>
-                                      <td>Service Charge</td>
-                                      <td>₹500</td>
-                                      <td>
-                                        <img
-                                          src={ic_rejected}
-                                          className="status-ic"
-                                          alt=""
-                                        />
-                                        Cancelled
-                                      </td>
+                                      <td>02-02-2023</td>
+                                      <td>02-02-2023</td>
+                                      <td>₹150</td>
+                                      <td>7788991122</td>
+                                      <td>Silk Mills Colony, Auranbagad</td>
+                                      <td>john@mail.com</td>
+                                      <td>30%</td>
                                     </tr>
                                     <tr>
                                       <td>4</td>
                                       <td>Ronald Sharma</td>
                                       <td>02-02-2023</td>
-                                      <td>12345678900</td>
-                                      <td>Clinic</td>
-                                      <td>₹500</td>
-                                      <td>
-                                        <img
-                                          src={ic_completed}
-                                          className="status-ic"
-                                          alt=""
-                                        />
-                                        Completed
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>5</td>
-                                      <td>Ronald Sharma</td>
                                       <td>02-02-2023</td>
-                                      <td>12345678900</td>
-                                      <td>Clinic</td>
-                                      <td>₹500</td>
-                                      <td>
-                                        <img
-                                          src={ic_completed}
-                                          className="status-ic"
-                                          alt=""
-                                        />
-                                        Completed
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>6</td>
-                                      <td>Ronald Sharma</td>
                                       <td>02-02-2023</td>
-                                      <td>12345678900</td>
-                                      <td>Clinic</td>
-                                      <td>₹500</td>
-                                      <td>
-                                        <img
-                                          src={ic_rejected}
-                                          className="status-ic"
-                                          alt=""
-                                        />
-                                        Cancelled
-                                      </td>
+                                      <td>₹200</td>
+                                      <td>7788991122</td>
+                                      <td>Silk Mills Colony, Auranbagad</td>
+                                      <td>john@mail.com</td>
+                                      <td>30%</td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -218,27 +181,35 @@ const Sip = () => {
                                     <tr>
                                       <th>Sr. No</th>
                                       <th>Name</th>
-                                      <th>Due Date</th>
-                                      <th>Description</th>
+                                      <th>In Date</th>
+                                      <th>Out Date</th>
+                                      <th>Mature Date</th>
                                       <th>Amount</th>
-                                      <th>Action</th>
+                                      <th>Contact</th>
+                                      <th>Plan</th>
+                                      <th>Address</th>
+                                      <th>Email</th>
+                                      <th>%</th>
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    <tr>
+                                    <tr onClick={() => {
+                                        setviewAgreementList(false);
+                                        setshowResultTitle(true);
+                                        setshowResultMonthly(true);
+                                        setshowResultDaily(false);
+                                      }}>
                                       <td>1</td>
                                       <td>Ronald Sharma</td>
                                       <td>02-02-2023</td>
-                                      <td>Service Charge</td>
-                                      <td>₹500</td>
-                                      <td style={{ cursor: "pointer" }}>
-                                        <img
-                                          src={wallet_icon}
-                                          className="status-ic"
-                                          alt=""
-                                        />
-                                        Pay Now
-                                      </td>
+                                      <td>02-02-2023</td>
+                                      <td>02-02-2023</td>
+                                      <td>₹5000</td>
+                                      <td>7788991122</td>
+                                      <td>24 months</td>
+                                      <td>Silk Mills Colony, Auranbagad</td>
+                                      <td>john@mail.com</td>
+                                      <td>30%</td>
                                     </tr>
                                   </tbody>
                                 </table>
@@ -258,6 +229,292 @@ const Sip = () => {
           </>
         )}
         {showIdCreateForm && <IdCreateForm />}
+        {showResultTitle && (
+          <>
+            <div className="app-result-arrow-top">
+              <img
+                src={ic_back_arrow}
+                alt=""
+                onClick={() => {
+                  setviewAgreementList(true);
+                  setshowResultTitle(false); 
+                  setshowResultMonthly(false);
+                  setshowResultDaily(false);
+                }}
+              />
+              <label htmlFor="">
+                Showing result for : <span>Ronald Sharma</span>
+              </label>
+            </div>
+          </>
+        )}
+
+        {showResultDaily && (
+          <>
+            <div className="app-details-wrapper">
+              <div className="row gx-3">
+                <div className="col-md-12">
+                  <div className="left">
+                    <div className="aap-heading">
+                      <label htmlFor="">Ronald Sharma (Daily SIP)</label>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-12">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Name
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          Ronald Miller
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Registration Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2023, 04:30 PM
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Start Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2023
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Exit Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2023
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Plan
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          12 Months
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Maturity Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2023
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Plan Amount
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          500
+                        </label>
+                      </div>
+                    </div>
+                    <div className="table-wrapper table_wrapper_pagination p-0 dasboard-cust-tb-wrapper">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Sr. No</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Month</th>
+                            <th>Remark</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>02-02-2023</td>
+                            <td>₹300</td>
+                            <td>March</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>02-02-2023</td>
+                            <td>₹300</td>
+                            <td>March</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>02-02-2023</td>
+                            <td>₹300</td>
+                            <td>March</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>02-02-2023</td>
+                            <td>₹300</td>
+                            <td>March</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="pagination_wrapper">
+                      <p>Showing 1-10 of 100</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+        {showResultMonthly && (
+          <>
+            <div className="app-details-wrapper">
+              <div className="row gx-3">
+                <div className="col-md-12">
+                  <div className="left">
+                    <div className="aap-heading">
+                      <label htmlFor="">Ronald Sharma (Monthly SIP)</label>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-12">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Name
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          Ronald Miller
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Registration Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2023, 04:30 PM
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Start Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2023
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Exit Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2023
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Plan
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          12/18/24/36 Months
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Maturity Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2023
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Plan Amount
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          2000
+                        </label>
+                      </div>
+                    </div>
+                    <div className="table-wrapper table_wrapper_pagination p-0 dasboard-cust-tb-wrapper">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Sr. No</th>
+                            <th>Month</th>
+                            <th>Amount</th>
+                            <th>Receipt No.</th>
+                            <th>Receipt</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>March</td>
+                            <td>₹300</td>
+                            <td>123</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>March</td>
+                            <td>₹300</td>
+                            <td>123</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>March</td>
+                            <td>₹300</td>
+                            <td>123</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>March</td>
+                            <td>₹300</td>
+                            <td>123</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="pagination_wrapper">
+                      <p>Showing 1-10 of 100</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </motion.div>
   );

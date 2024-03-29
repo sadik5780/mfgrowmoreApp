@@ -13,10 +13,13 @@ import { DarkButton, DonutChart } from "../commonComponents/commonComp";
 import { Link, useNavigate } from "react-router-dom";
 import PaginationComp from "../../sharedComponent/PaginationComp";
 import IdCreateForm from "../Agreement/IdCreateForm";
+import ic_back_arrow from "../../assets/images/ic_back_arrow.svg";
 
 const PreInvestment = () => {
   const [viewAgreementList, setviewAgreementList] = useState(true); 
   const [showIdCreateForm, setshowIdCreateForm] = useState(false);
+  const [showResultPreInvestment, setshowResultPreInvestment] = useState(false);
+  const [showResultTitle, setshowResultTitle] = useState(false);
 
 
 
@@ -94,7 +97,11 @@ const PreInvestment = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr  onClick={() => {
+                                        setviewAgreementList(false);
+                                        setshowResultTitle(true);
+                                        setshowResultPreInvestment(true);
+                                      }}>
                       <td>1</td>
                       <td>Brooklyn Simmons</td>
 
@@ -387,6 +394,134 @@ const PreInvestment = () => {
           </>
         )}
         {showIdCreateForm && <IdCreateForm />}
+
+        {showResultTitle && (
+          <>
+            <div className="app-result-arrow-top">
+              <img
+                src={ic_back_arrow}
+                alt=""
+                onClick={() => {
+                  setviewAgreementList(true);
+                  setshowResultTitle(false); 
+                  setshowResultPreInvestment(false); 
+                }}
+              />
+              <label htmlFor="">
+                Showing result for : <span>Ronald Sharma</span>
+              </label>
+            </div>
+          </>
+        )}
+
+        {showResultPreInvestment && (
+          <>
+            <div className="app-details-wrapper">
+              <div className="row gx-3">
+                <div className="col-md-12">
+                  <div className="left">
+                    <div className="aap-heading">
+                      <label htmlFor="">Ronald Sharma (Pre Investment)</label>
+                    </div>
+                    <div className="row">
+                      <div className="col-md-12">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Name of Investor
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          Ronald Miller
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Investment Amount
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                         1 Lakh
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Investment Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2023
+                        </label>
+                      </div>
+                      <div className="col-md-4">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Exit Date
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          02-02-2025
+                        </label>
+                      </div>
+                    </div>
+                    <div className="table-wrapper table_wrapper_pagination p-0 dasboard-cust-tb-wrapper">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Sr. No</th>
+                            <th>Month</th>
+                            <th>Principal Amount</th>
+                            <th>Profit Amount</th>
+                            <th>Total Amount</th>
+                            <th>Transaction No.</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>02-02-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>4312</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>02-03-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>4312</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>02-04-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>4312</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>4312</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="pagination_wrapper">
+                      <p>Showing 1-10 of 100</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </motion.div>
   );

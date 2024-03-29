@@ -23,17 +23,17 @@
   flex-direction: column;
   justify-content: space-between;
 
-  .pagination_wrapper {
-    p {
-      margin: 0;
-      padding: 0 0 20px 20px;
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 18px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: var(--text_light_table_heading_A3AED0);
-    }
+}
+.pagination_wrapper {
+  p {
+    margin: 0;
+    padding: 0 0 10px 0px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--text_light_table_heading_A3AED0);
   }
 }
 
