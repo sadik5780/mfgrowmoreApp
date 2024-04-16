@@ -88,7 +88,7 @@ const Dashboard = () => {
               </div>
               <div className="lc_bottom">
                 <div className="selection">
-                  <select
+                  <select value=""
                     className="form-select"
                     aria-label="Default select example"
                   >
@@ -128,7 +128,7 @@ const Dashboard = () => {
               </div>
               <div className="lc_bottom">
                 <div className="selection">
-                  <select
+                  <select value=""
                     className="form-select"
                     aria-label="Default select example"
                   >
@@ -168,7 +168,7 @@ const Dashboard = () => {
               </div>
               <div className="lc_bottom">
                 <div className="selection">
-                  <select
+                  <select value=""
                     className="form-select"
                     aria-label="Default select example"
                   >
@@ -222,7 +222,7 @@ const Dashboard = () => {
               </div>
               <div className="lc_bottom">
                 <div className="selection">
-                  <select
+                  <select value=""
                     className="form-select"
                     aria-label="Default select example"
                   >

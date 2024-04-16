@@ -7,11 +7,12 @@
     z-index: 111;
     left: 20px;
     height: calc(100vh - 40px);
-    background-color: var(--primary_dark_bg_34528A);
+    background-color: #fff;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
     .accordion {
-      background-color: var(--primary_dark_bg_34528A) !important;
+      background-color: transparent !important;
     }
 
     .logoMain {
@@ -59,15 +60,14 @@
 
     .accordion-body {
       margin-top: 0px !important;
-      padding: 0px 0px 0px 25px;
+      padding: 0px 0px 0px 20px;
       margin-bottom: 15px;
-      background: var(--primary_dark_bg_34528A);
     }
 
     .accordion-button {
       display: block;
       padding: 0px !important;
-      background-color: var(--primary_dark_bg_34528A);
+      // background-color: var(--primary_dark_bg_34528A);
     }
 
     .accordion-item:last-of-type .accordion-button.collapsed {
@@ -82,8 +82,6 @@
     .sidebarLinks {
       padding: 0px 0px 10px 18px;
       width: 100%;
-      // margin-bottom: 20px;
-      background: var(--primary_dark_bg_34528A);
     }
 
     .targetLink {
@@ -94,7 +92,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      margin-bottom: 23px;
+      margin-bottom: 10px;
     }
 
     .arrowSetting {
@@ -105,16 +103,16 @@
     }
 
     .activeTxt {
-      font-size: 16px;
-      color: var(--secondary_light_bg_E9F5FB);
+      font-size: 14.5px;
+      color: var(--text_dark_blue_042486);
       font-weight: 600;
       margin-bottom: 0px !important;
       margin-left: 10px;
     }
 
     .deActiveTxt {
-      font-size: 16px;
-      color: var(--text_light_menu_819FD8);
+      font-size: 14px;
+      color: var(--text_dark_blue_34528A);
       font-weight: 400;
       margin-bottom: 0px !important;
       margin-left: 10px;
@@ -127,13 +125,13 @@
 
     .menu_items {
       transition: all 0.5s;
-      border-left: 2px solid var(--secondary_light_bg_E9F5FB);
+      border-left: 2px solid var(--text_dark_blue_042486);
       display: flex;
       flex-direction: column;
       margin-left: 6px;
 
       .menuLink {
-        margin-left: 15px;
+        margin-left: 0px;
         text-decoration: none;
         color: var(--greyLightTxtColorValueA3AED0);
         margin-bottom: 10px;

@@ -6,7 +6,7 @@
 
         .export_button {
             position: absolute;
-            top: 0;
+            top: -2px;
             right: 0;
             display: flex;
             align-items: center;
@@ -561,7 +561,7 @@
         background-color: #fff;
         border-radius: 20px;
         padding: 10px;
-
+        // height: calc(100vh - 200px);
         // Common Input Form Styling
 
 
@@ -719,34 +719,149 @@ input[type="date"]::before {
         }
     }
 
-   
+
 }
 
-.planSelect {
 
-    .form-select {
-        border: 1px solid #dff1ec;
-        border-radius: 10px;
-        margin-top: 10px;
-        padding: 10px;
+
+.form-select {
+    border: 1px solid #dff1ec;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    color: #d8dceb;
+    font-size: 14px;
+    font-weight: 400;
+
+
+
+    &::placeholder {
+        color: #d8dceb !important;
         font-size: 14px;
         font-weight: 400;
+    }
 
-        &::placeholder {
-            color: #d8dceb;
-            font-size: 14px;
-            font-weight: 400;
-        }
-
-        &:focus {
-            box-shadow: none;
-        }
+    &:focus {
+        box-shadow: none;
     }
 }
+
 
 p.output {
     margin: 10px 0 0;
     padding: 10px 0;
     height: 40px;
     color: var(--text_dark_blue_042486);
+}
+
+
+input[type="date"] {
+    /* Your CSS styles here */
+    // padding: 8px;
+    // border: 1px solid #ccc;
+    // border-radius: 4px;
+    // box-sizing: border-box;
+    /* Add more styles as needed */
+}
+
+/* Example: Styling the placeholder text */
+input[type="date"]::placeholder {
+    color: #999;
+    /* Placeholder text color */
+}
+
+/* Example: Styling the selected date */
+input[type="date"]::-webkit-datetime-edit {
+    color: var(--text_gray_8F9BBA);
+    font-size: 14px;
+    /* Color of the selected date */
+}
+
+/* Example: Styling the calendar button */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* Your styles for the calendar button */
+}
+
+.offer1 {
+    background-color: #d1ecf1;
+
+    td {
+        color: #0c5460 !important;
+        border-color: #bee5eb;
+    }
+}
+
+.offer2 {
+    background-color: #d6d8d9;
+
+    td {
+        color: #1b1e21 !important;
+        border-color: #c6c8ca;
+    }
+}
+
+.offer3 {
+    background-color: #fff3cd;
+
+    td {
+        color: #856404 !important;
+        border-color: #ffeeba;
+    }
+}
+
+.offer4 {
+    background-color: #e2e3e5;
+
+    td {
+        color: #383d41 !important;
+        border-color: #d6d8db;
+    }
+}
+
+.profitUp {
+    background-color: #d4edda;
+
+    td {
+        color: #155724 !important;
+        border-color: #c3e6cb;
+    }
+}
+
+.profitDown {
+    background-color: #f8d7da;
+
+    td {
+        color: #721c24 !important;
+        border-color: #f5c6cb;
+    }
+}
+
+.newCust {
+    background-color: #cce5ff;
+
+    td {
+        color: #004085 !important;
+        border-color: #b8daff !important;
+
+        &:first-child {
+            position: relative;
+
+            &::before {
+                content: "New";
+                position: absolute;
+                top: -3px;
+                left: -10px;
+                transform: rotate(-20deg);
+                background-color: #004085;
+                color: #fff;
+                padding: 0 4px;
+                font-size: 10px;
+                letter-spacing: 1px;
+                border-radius: 3px;
+            }
+
+        }
+    }
+
+
 }

@@ -4,9 +4,9 @@
     position: relative;
 
     .top-header {
-        background-color: var(--primary_dark_bg_34528A);
+        background-color: #fff;
         width: calc(100% - 250px);
-        height: 80px;
+        height: 70px;
         margin-left: 230px;
         display: flex;
         justify-content: space-between;
@@ -17,6 +17,7 @@
         border-radius: 15px;
         padding: 10px;
         // position: relative;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
     }
 
@@ -218,11 +219,11 @@
     .headingBreads,
     .breadCrumbsTop {
         .leftHeadTxt {
-            margin-left: 270px;
+            // margin-left: 270px;
             transition: all .5s;
             font-size: 24px;
             font-weight: 600;
-            color: var(--navyBluetxtColor042486);
+            color: var(--text_dark_blue_042486);
         }
 
         .leftHeadBread {
@@ -252,10 +253,10 @@
         .leftSideCloseBar {
             margin-left: 0px;
             transition: all .5s;
-            padding-right: 20px;
+            padding-left: 10px;
             font-size: 24px;
             font-weight: 600;
-            color: var(--navyBluetxtColor042486);
+            color: var(--text_dark_blue_042486);
         }
     }
 
@@ -281,7 +282,7 @@
         .innerSearch {
             position: relative;
             // background-color: var(--bg_White);
-            padding: 10px;
+            padding: 5px;
             border-radius: 30px;
             display: flex;
             // width: 370px;

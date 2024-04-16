@@ -67,17 +67,6 @@ const CustomerDetails = () => {
                 <img src={ic_export} alt="" />
               </button>
             </div>
-            <div className="dark-btns-wrapper search-filter">
-              <button
-                className="dark-btns"
-                onClick={() => {
-                  setcustomerList(false);
-                  setcustomerForm(true);
-                }}
-              >
-                Add Customer
-              </button>
-            </div>
           </div>
 
           {viewAppointment && (
@@ -100,7 +89,7 @@ const CustomerDetails = () => {
           <div>
             {completedList && (
               <div className="table-wrapper left-table ">
-                <table>
+                <table className="sequenceTable">
                   <thead>
                     <tr>
                       <th>Sr. No</th>

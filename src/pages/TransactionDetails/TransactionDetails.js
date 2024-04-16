@@ -283,7 +283,7 @@ const TransactionDetails = () => {
                 <div className="dc_header">
                   <p>Payment Analytics</p>
                   <div className="selection">
-                    <select
+                    <select value=""
                       className="form-select"
                       aria-label="Default select example"
                     >

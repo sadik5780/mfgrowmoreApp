@@ -101,7 +101,8 @@ const PreInvestment = () => {
                                         setviewAgreementList(false);
                                         setshowResultTitle(true);
                                         setshowResultPreInvestment(true);
-                                      }}>
+                                      }}
+                                      className="offer1">
                       <td>1</td>
                       <td>Brooklyn Simmons</td>
 
@@ -120,7 +121,8 @@ const PreInvestment = () => {
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
                     </tr>
-                    <tr>
+                    <tr className="newCust">
+                      {/* This class should be removed after 1 month for New Customer  */}
                       <td>2</td>
                       <td>Brooklyn Simmons</td>
 
@@ -139,7 +141,7 @@ const PreInvestment = () => {
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
                     </tr>{" "}
-                    <tr>
+                    <tr className="profitUp">
                       <td>3</td>
                       <td>Brooklyn Simmons</td>
 
@@ -158,7 +160,7 @@ const PreInvestment = () => {
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
                     </tr>{" "}
-                    <tr>
+                    <tr className="profitDown">
                       <td>4</td>
                       <td>Brooklyn Simmons</td>
 
@@ -177,7 +179,7 @@ const PreInvestment = () => {
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
                     </tr>{" "}
-                    <tr>
+                    <tr className="offer4">
                       <td>5</td>
                       <td>Brooklyn Simmons</td>
 
@@ -196,7 +198,7 @@ const PreInvestment = () => {
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
                     </tr>{" "}
-                    <tr>
+                    <tr className="offer3">
                       <td>6</td>
                       <td>Brooklyn Simmons</td>
 
@@ -215,7 +217,7 @@ const PreInvestment = () => {
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
                     </tr>{" "}
-                    <tr>
+                    <tr className="offer2">
                       <td>7</td>
                       <td>Brooklyn Simmons</td>
 

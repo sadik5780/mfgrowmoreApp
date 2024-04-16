@@ -18,6 +18,8 @@ import AddClinic from "./pages/MyProfile/AddClinic";
 import AddTeam from "./pages/MyProfile/AddTeam";
 import PreInvestment from "./pages/Agreement/PreInvestment";
 import Sip from "./pages/Agreement/sip";
+import Sequence from "./pages/Payment/Sequence";
+import PaymentSheet from "./pages/Payment/PaymentSheet";
 import IdCreateForm from "./pages/Agreement/IdCreateForm";
 
 function App() {
@@ -64,6 +66,8 @@ function App() {
           <Route path="PreInvestment" element={<PreInvestment />} />
           <Route path="Sip" element={<Sip />} />
           <Route path="IdCreateForm" element={<IdCreateForm />} />
+          <Route path="Sequence" element={<Sequence />} />
+          <Route path="PaymentSheet" element={<PaymentSheet />} />
           {/* ============== MyProfile ============= */}
           <Route path="MyProfile" element={<MyProfile />} /> 
           <Route path="AddClinic" element={<AddClinic />} />

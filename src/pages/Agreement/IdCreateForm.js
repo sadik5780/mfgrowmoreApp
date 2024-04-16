@@ -87,7 +87,7 @@ const IdCreateForm = () => {
                     className="form-control"
                   />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-2">
                   <label htmlFor="" className="pass_text">
                     Password
                   </label>
@@ -97,7 +97,7 @@ const IdCreateForm = () => {
                     className="form-control"
                   />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-2">
                   <label htmlFor="" className="pass_text">
                     Confirm Password
                   </label>
@@ -264,7 +264,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Gender
                     </label>
@@ -274,38 +274,55 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
-                    <label htmlFor="" className="pass_text">
-                      Address for communication
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Enter address line 1"
-                      className="form-control"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Enter city"
-                      className="form-control"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Enter pincode"
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="col-lg-6">
-                    <label htmlFor="" className="pass_text"></label>
-                    <input
-                      type="text"
-                      placeholder="Enter address line 2"
-                      className="form-control"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Enter state"
-                      className="form-control"
-                    />
+                  <div className="col-lg-12 mb-2">
+                    <div className="row">
+                      <div className="col-lg-12">
+                        <label htmlFor="" className="pass_text">
+                          Address for communication
+                        </label>
+                      </div>
+
+                      <div className="col-lg-6">
+                        {" "}
+                        <input
+                          type="text"
+                          placeholder="Enter address line 1"
+                          className="form-control"
+                        />
+                      </div>
+                      <div className="col-lg-6">
+                        <input
+                          type="text"
+                          placeholder="Enter city"
+                          className="form-control"
+                        />
+                      </div>
+                      <div className="col-lg-6">
+                        {" "}
+                        <input
+                          type="text"
+                          placeholder="Enter pincode"
+                          className="form-control"
+                        />
+                      </div>
+                      <div className="col-lg-6">
+                        {" "}
+                        <input
+                          type="text"
+                          placeholder="Enter address line 2"
+                          className="form-control"
+                        />
+                      </div>
+                      <div className="col-lg-6">
+                        {" "}
+                        <input
+                          type="text"
+                          placeholder="Enter state"
+                          className="form-control"
+                        />
+                      </div>
+                      <div className="col-lg-6"></div>
+                    </div>
                   </div>
                   <div className="col-lg-12">
                     <div className="btn_wrapper mt-3 mb-3">
@@ -370,7 +387,7 @@ const IdCreateForm = () => {
                     className="form-control"
                   />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-2">
                   <label htmlFor="" className="pass_text">
                     Gender
                   </label>
@@ -380,7 +397,7 @@ const IdCreateForm = () => {
                     className="form-control"
                   />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-2">
                   <label htmlFor="" className="pass_text">
                     Relation
                   </label>
@@ -390,7 +407,7 @@ const IdCreateForm = () => {
                     className="form-control"
                   />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-2">
                   <label htmlFor="" className="pass_text">
                     Pan no.
                   </label>
@@ -400,7 +417,7 @@ const IdCreateForm = () => {
                     className="form-control"
                   />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 mb-2">
                   <label htmlFor="" className="pass_text">
                     Nominee Address
                   </label>
@@ -493,7 +510,7 @@ const IdCreateForm = () => {
               <h3 className="title">Investment Plans</h3>
             </div>
             <div className="planSelect">
-              <select
+              <select value=""
                 className="form-select"
                 aria-label="Default select example"
                 value={selectedOption}
@@ -527,7 +544,7 @@ const IdCreateForm = () => {
                     <label htmlFor="" className="pass_text">
                       Mode of payment
                     </label>
-                    <select
+                    <select value="cash"
                       className="form-select"
                       aria-label="Default select example"
                     >
@@ -550,7 +567,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Cheque no.
                     </label>
@@ -560,7 +577,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Agreement start date
                     </label>
@@ -570,7 +587,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Agreement end date
                     </label>
@@ -580,17 +597,36 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
-                    <label htmlFor="" className="pass_text">
-                      Profit upto
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Enter nominee address..."
-                      className="form-control"
-                    />
+                  <div className="col-lg-6 mb-2">
+                    <div className="row">
+                      <div className="col-lg-6">
+                        <label htmlFor="" className="pass_text">
+                          Profit upto
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="Enter nominee address..."
+                          className="form-control"
+                        />
+                      </div>
+                      <div className="col-lg-6">
+                        <label htmlFor="" className="pass_text">
+                          One time / per month
+                        </label>
+                        <select value=""
+                          className="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option value="" selected>
+                            Select Frequency
+                          </option>
+                          <option value="">One Time</option>
+                          <option value="">Per Month</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Principle amount
                     </label>
@@ -604,7 +640,7 @@ const IdCreateForm = () => {
                     <label htmlFor="" className="pass_text">
                       Mode of payment (OUT)
                     </label>
-                    <select
+                    <select value="cash"
                       className="form-select"
                       aria-label="Default select example"
                     >
@@ -613,6 +649,16 @@ const IdCreateForm = () => {
                       <option value="upi">UPI</option>
                       <option value="cheque">Cheque</option>
                     </select>
+                  </div>
+                  <div className="col-lg-6 mb-2">
+                    <label htmlFor="" className="pass_text">
+                      Offer
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter offer name..."
+                      className="form-control"
+                    />
                   </div>
                   <div className="col-lg-12">
                     <div className="btn_wrapper">
@@ -651,7 +697,7 @@ const IdCreateForm = () => {
                     <label htmlFor="" className="pass_text">
                       Mode of payment
                     </label>
-                    <select
+                    <select value="cash"
                       className="form-select"
                       aria-label="Default select example"
                     >
@@ -674,7 +720,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Agreement start date
                     </label>
@@ -684,7 +730,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Agreement end date
                     </label>
@@ -694,7 +740,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Maturity Date
                     </label>
@@ -704,7 +750,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Profit upto
                     </label>
@@ -714,7 +760,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Principle amount
                       {/* Note for developer */}
@@ -730,7 +776,7 @@ const IdCreateForm = () => {
                     <label htmlFor="" className="pass_text">
                       Mode of payment (OUT)
                     </label>
-                    <select
+                    <select value="cash"
                       className="form-select"
                       aria-label="Default select example"
                     >
@@ -740,7 +786,7 @@ const IdCreateForm = () => {
                       <option value="cheque">Cheque</option>
                     </select>
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Total amount (Profit + Principal)
                     </label>
@@ -787,7 +833,7 @@ const IdCreateForm = () => {
                     <label htmlFor="" className="pass_text">
                       Mode of payment
                     </label>
-                    <select
+                    <select value="cash"
                       className="form-select"
                       aria-label="Default select example"
                     >
@@ -811,7 +857,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Agreement start date
                     </label>
@@ -821,7 +867,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Agreement end date
                     </label>
@@ -831,7 +877,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Maturity Date
                     </label>
@@ -841,7 +887,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Profit upto
                     </label>
@@ -851,7 +897,7 @@ const IdCreateForm = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Principle amount
                       {/* Note for developer */}
@@ -867,7 +913,7 @@ const IdCreateForm = () => {
                     <label htmlFor="" className="pass_text">
                       Mode of payment (OUT)
                     </label>
-                    <select
+                    <select value="cash"
                       className="form-select"
                       aria-label="Default select example"
                     >
@@ -877,7 +923,7 @@ const IdCreateForm = () => {
                       <option value="cheque">Cheque</option>
                     </select>
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-lg-6 mb-2">
                     <label htmlFor="" className="pass_text">
                       Total amount (Profit + Principal)
                     </label>
@@ -945,7 +991,7 @@ const IdCreateForm = () => {
                           className="form-control"
                         />
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-lg-6 mb-2">
                         <label htmlFor="" className="pass_text">
                           IFSC Code
                         </label>
@@ -960,8 +1006,8 @@ const IdCreateForm = () => {
                           <button
                             className="cx-btn-dark ms-auto"
                             onClick={() => {
-                                setselectPlan(false);
-                                // navigate("/Sip")
+                              setselectPlan(false);
+                              // navigate("/Sip")
                             }}
                           >
                             Submit

@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { AppContext } from '../context/AppContext';
+import React, { useContext, useEffect, useState } from "react";
+import { AppContext } from "../context/AppContext";
 import logo from "../assets/images/logo.png";
 import dashboard from "../assets/images/sidebarIcons/dashboard.svg";
 import dashboardActive from "../assets/images/sidebarIcons/dashboardActive.svg";
@@ -13,9 +13,9 @@ import deliveryBoy from "../assets/images/sidebarIcons/DeliveryBoy.svg";
 import deliveryBoyActive from "../assets/images/sidebarIcons/DeliveryBoyActive.svg";
 import double_arrow from "../assets/images/double_arrow.svg";
 import activeImg from "../assets/images/sidebarIcons/highlightImg.svg";
-import Accordion from 'react-bootstrap/Accordion';
-import { useLocation } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import Accordion from "react-bootstrap/Accordion";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
 const Sidebar = () => {
@@ -34,7 +34,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     isMobile ? setSidebar(false) : setSidebar(true);
-    return () => { };
+    return () => {};
   }, [isMobile]);
 
   const mobileSidebarOff = () => {
@@ -43,54 +43,109 @@ const Sidebar = () => {
   return (
     <>
       <div className="cx-sideBar">
-        <div className={
-          sidebar ? "cx-sidebar-wrapper" : "cx-sidebar-wrapper sidebarActive"
-        }>
+        <div
+          className={
+            sidebar ? "cx-sidebar-wrapper" : "cx-sidebar-wrapper sidebarActive"
+          }
+        >
           <>
             <div className="logoMain">
-              {
-                 sidebar ? <img src={logo} alt="" /> : <span className='sm-logo'>
-                 <img src={logo} alt="" />
-               </span>
-              }
-              
+              {sidebar ? (
+                <img src={logo} alt="" />
+              ) : (
+                <span className="sm-logo">
+                  <img src={logo} alt="" />
+                </span>
+              )}
             </div>
-            
+
             <div className="arrow-wrapper">
-              <button onClick={()=>setSidebar(!sidebar)}>
-              <img src={double_arrow} alt="" />
+              <button onClick={() => setSidebar(!sidebar)}>
+                <img src={double_arrow} alt="" />
               </button>
             </div>
 
             {/* Dashboard */}
-            <Accordion >
+            <Accordion>
               <div className="sidebarLinks">
-                <Link to="/Dashboard" className='targetLink' onClick={mobileSidebarOff}>
+                <Link
+                  to="/Dashboard"
+                  className="targetLink"
+                  onClick={mobileSidebarOff}
+                >
                   <div className="dashboardLink">
-                    <p className={currentRoute === "/Dashboard" ? "activeTxt" : "deActiveTxt"}>Dashboard</p>
-                    <img src={currentRoute === "/Dashboard" ? activeImg : null} className='activelogo' alt="" />
+                    <p
+                      className={
+                        currentRoute === "/Dashboard"
+                          ? "activeTxt"
+                          : "deActiveTxt"
+                      }
+                    >
+                      Dashboard
+                    </p>
+                    <img
+                      src={currentRoute === "/Dashboard" ? activeImg : null}
+                      className="activelogo"
+                      alt=""
+                    />
                   </div>
                 </Link>
               </div>
               {/* Customer Details */}
               <div className="sidebarLinks">
-                <Link to="/CustomerDetails" className='targetLink' onClick={mobileSidebarOff}>
+                <Link
+                  to="/CustomerDetails"
+                  className="targetLink"
+                  onClick={mobileSidebarOff}
+                >
                   <div className="dashboardLink">
-                    <p className={currentRoute === "/Doctors" ||
-                      currentRoute === "/CustomerDetails" ? "activeTxt" : "deActiveTxt"}>Customer Details</p>
-                    <img src={currentRoute === "/CustomerDetails" ||
-                      currentRoute === "/CustomerDetails" ? activeImg : null} className='activelogo' alt="" />
+                    <p
+                      className={
+                        currentRoute === "/Doctors" ||
+                        currentRoute === "/CustomerDetails"
+                          ? "activeTxt"
+                          : "deActiveTxt"
+                      }
+                    >
+                      Customer Details
+                    </p>
+                    <img
+                      src={
+                        currentRoute === "/CustomerDetails" ||
+                        currentRoute === "/CustomerDetails"
+                          ? activeImg
+                          : null
+                      }
+                      className="activelogo"
+                      alt=""
+                    />
                   </div>
                 </Link>
               </div>
               {/* Appointments */}
-              
+
               {/* Reports */}
               <div className="sidebarLinks">
-                <Link to="/Reports" className='targetLink' onClick={mobileSidebarOff}>
+                <Link
+                  to="/Reports"
+                  className="targetLink"
+                  onClick={mobileSidebarOff}
+                >
                   <div className="dashboardLink">
-                    <p className={currentRoute === "/Reports" ? "activeTxt" : "deActiveTxt"}>Reports</p>
-                    <img src={currentRoute === "/Reports" ? activeImg : null} className='activelogo' alt="" />
+                    <p
+                      className={
+                        currentRoute === "/Reports"
+                          ? "activeTxt"
+                          : "deActiveTxt"
+                      }
+                    >
+                      Reports
+                    </p>
+                    <img
+                      src={currentRoute === "/Reports" ? activeImg : null}
+                      className="activelogo"
+                      alt=""
+                    />
                   </div>
                 </Link>
               </div>
@@ -105,19 +160,37 @@ const Sidebar = () => {
               </div> */}
 
               <Accordion.Item eventKey="0">
-                <Accordion.Header onClick={() => {
-                  setPharmacy(!pharmacy);
-                  setAdminS(false);
-                  setReport(false)
-                  setVetPets(false);
-                }}>
-                  <Link to="#" className='targetLink'>
+                <Accordion.Header
+                  onClick={() => {
+                    setPharmacy(!pharmacy);
+                    setAdminS(false);
+                    setReport(false);
+                    setVetPets(false);
+                  }}
+                >
+                  <Link to="#" className="targetLink">
                     <div className="sidebarLinks">
-                      <div className="dashboardLink"> 
-                        <p className={currentRoute === "/PreInvestment" ||
-                          currentRoute === "/Sip" ? "activeTxt" : "deActiveTxt"}>Agreement</p>
-                        <img src={currentRoute === "/PreInvestment" ||
-                          currentRoute === "/Sip" ? activeImg : null} className='activelogo' alt="" />
+                      <div className="dashboardLink">
+                        <p
+                          className={
+                            currentRoute === "/PreInvestment" ||
+                            currentRoute === "/Sip"
+                              ? "activeTxt"
+                              : "deActiveTxt"
+                          }
+                        >
+                          Agreement
+                        </p>
+                        <img
+                          src={
+                            currentRoute === "/PreInvestment" ||
+                            currentRoute === "/Sip"
+                              ? activeImg
+                              : null
+                          }
+                          className="activelogo"
+                          alt=""
+                        />
                         {/* <img src={pharmacy ? arrowAActive : rightArrow
                         } className='arrowSetting' alt="" /> */}
                       </div>
@@ -126,14 +199,103 @@ const Sidebar = () => {
                 </Accordion.Header>
                 <Accordion.Body>
                   <div className="menu_items">
-                    <Link to="/PreInvestment" className='menuLink' onClick={mobileSidebarOff}>
-                      <div className={currentRoute === "/PreInvestment" ? "activeTxt" : "deActiveTxt"}>
-                      Pre Investment
+                    <Link
+                      to="/PreInvestment"
+                      className="menuLink"
+                      onClick={mobileSidebarOff}
+                    >
+                      <div
+                        className={
+                          currentRoute === "/PreInvestment"
+                            ? "activeTxt"
+                            : "deActiveTxt"
+                        }
+                      >
+                        Pre Investment
                       </div>
                     </Link>
-                    <Link to="/Sip" className='menuLink' onClick={mobileSidebarOff}>
-                      <div className={currentRoute === "/Sip" ? "activeTxt" : "deActiveTxt"}>
-                      SIP
+                    <Link
+                      to="/Sip"
+                      className="menuLink"
+                      onClick={mobileSidebarOff}
+                    >
+                      <div
+                        className={
+                          currentRoute === "/Sip" ? "activeTxt" : "deActiveTxt"
+                        }
+                      >
+                        SIP
+                      </div>
+                    </Link>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header
+                  onClick={() => {
+                    setPharmacy(!pharmacy);
+                    setAdminS(false);
+                    setReport(false);
+                    setVetPets(false);
+                  }}
+                >
+                  <Link to="#" className="targetLink">
+                    <div className="sidebarLinks">
+                      <div className="dashboardLink">
+                        <p
+                          className={
+                            currentRoute === "/Sequence" ||
+                            currentRoute === "/PaymentSheet"
+                              ? "activeTxt"
+                              : "deActiveTxt"
+                          }
+                        >
+                          Sequence
+                        </p>
+                        <img
+                          src={
+                            currentRoute === "/Sequence" ||
+                            currentRoute === "/PaymentSheet"
+                              ? activeImg
+                              : null
+                          }
+                          className="activelogo"
+                          alt=""
+                        />
+                        {/* <img src={pharmacy ? arrowAActive : rightArrow
+                        } className='arrowSetting' alt="" /> */}
+                      </div>
+                    </div>
+                  </Link>
+                </Accordion.Header>
+                <Accordion.Body>
+                  <div className="menu_items">
+                    <Link
+                      to="/Sequence"
+                      className="menuLink"
+                      onClick={mobileSidebarOff}
+                    >
+                      <div
+                        className={
+                          currentRoute === "/Sequence"
+                            ? "activeTxt"
+                            : "deActiveTxt"
+                        }
+                      >
+                        Sequence
+                      </div>
+                    </Link>
+                    <Link
+                      to="/PaymentSheet"
+                      className="menuLink"
+                      onClick={mobileSidebarOff}
+                    >
+                      <div
+                        className={
+                          currentRoute === "/PaymentSheet" ? "activeTxt" : "deActiveTxt"
+                        }
+                      >
+                        Pre Payment Sheet
                       </div>
                     </Link>
                   </div>
@@ -149,13 +311,12 @@ const Sidebar = () => {
                   </div>
                 </Link>
               </div> */}
-              
             </Accordion>
           </>
-        </div >
-      </div >
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
