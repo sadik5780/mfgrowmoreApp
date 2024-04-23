@@ -16,13 +16,10 @@ import IdCreateForm from "../Agreement/IdCreateForm";
 import ic_back_arrow from "../../assets/images/ic_back_arrow.svg";
 
 const PreInvestment = () => {
-  const [viewAgreementList, setviewAgreementList] = useState(true); 
+  const [viewAgreementList, setviewAgreementList] = useState(true);
   const [showIdCreateForm, setshowIdCreateForm] = useState(false);
   const [showResultPreInvestment, setshowResultPreInvestment] = useState(false);
   const [showResultTitle, setshowResultTitle] = useState(false);
-
-
-
 
   const aninations = {
     initial: { opacity: 0, x: 400 },
@@ -47,19 +44,27 @@ const PreInvestment = () => {
           <>
             <div className="search-filter-wrapper">
               <div className="search-filter-left">
-                <input
-                  type="text"
-                  className="form-control serach-input"
-                  placeholder="Search by Name, Email, Contact..."
-                />
-                <input
-                  type="date"
-                  className="form-control date-input mx-3"
-                  // placeholder="Search by date"
-                />
-                <button className="fltr-btn">
-                  <img src={ic_export} alt="" />
-                </button>
+                <div className="row">
+                  <div className="col-lg-5"> 
+                    <input
+                      type="text"
+                      className="form-control serach-input"
+                      placeholder="Search by Name, Email, Contact..."
+                    />
+                  </div>
+                  <div className="col-lg-5">
+                    <input
+                      type="date"
+                      className="form-control date-input"
+                      // placeholder="Search by date"
+                    />
+                  </div>
+                  <div className="col-lg-2">
+                    <button className="fltr-btn">
+                      <img src={ic_export} alt="" />
+                    </button>
+                  </div>
+                </div>
               </div>
               <div className="dark-btns-wrapper search-filter">
                 <button
@@ -97,12 +102,14 @@ const PreInvestment = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr  onClick={() => {
-                                        setviewAgreementList(false);
-                                        setshowResultTitle(true);
-                                        setshowResultPreInvestment(true);
-                                      }}
-                                      className="offer1">
+                    <tr
+                      onClick={() => {
+                        setviewAgreementList(false);
+                        setshowResultTitle(true);
+                        setshowResultPreInvestment(true);
+                      }}
+                      className="offer1"
+                    >
                       <td>1</td>
                       <td>Brooklyn Simmons</td>
 
@@ -116,7 +123,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -136,7 +143,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -155,7 +162,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -174,7 +181,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -193,7 +200,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -212,7 +219,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -231,7 +238,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -250,7 +257,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -269,7 +276,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -288,7 +295,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -307,7 +314,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -326,7 +333,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -345,7 +352,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -364,7 +371,7 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
@@ -383,10 +390,16 @@ const PreInvestment = () => {
                       <td>5000 - 6000</td>
                       <td>9200 - 10200</td>
                       <td>Silk Mills Colony, Aurangabad</td>
-                       <td>simmons@mail.com</td>
+                      <td>simmons@mail.com</td>
                       <td>1234567890</td>
                       <td>SBIN0123456</td>
                       <td>11223344556677</td>
+                    </tr>
+                    <tr>
+                      <td colSpan={3} className="monthly_total">
+                        Total Investment
+                      </td>
+                      <td className="ttpr">40,00,000</td>
                     </tr>
                   </tbody>
                 </table>
@@ -405,8 +418,8 @@ const PreInvestment = () => {
                 alt=""
                 onClick={() => {
                   setviewAgreementList(true);
-                  setshowResultTitle(false); 
-                  setshowResultPreInvestment(false); 
+                  setshowResultTitle(false);
+                  setshowResultPreInvestment(false);
                 }}
               />
               <label htmlFor="">
@@ -443,7 +456,7 @@ const PreInvestment = () => {
                           </label>
                         </div>
                         <label htmlFor="" className="value">
-                         1 Lakh
+                          1 Lakh
                         </label>
                       </div>
                       <div className="col-md-4">
@@ -464,6 +477,19 @@ const PreInvestment = () => {
                         </div>
                         <label htmlFor="" className="value">
                           02-02-2025
+                        </label>
+                      </div>
+                      <div className="col-md-12">
+                        <div>
+                          <label htmlFor="" className="key">
+                            Description
+                          </label>
+                        </div>
+                        <label htmlFor="" className="value">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Enim consectetur perspiciatis sequi ut ad
+                          voluptates quisquam illo minima itaque, iste saepe
+                          amet fuga, eum vitae eos in, adipisci labore! Iure.
                         </label>
                       </div>
                     </div>
@@ -510,7 +536,119 @@ const PreInvestment = () => {
                             <td>₹5500</td>
                             <td>₹5000</td>
                             <td>₹10,500</td>
-                            <td>4312</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>12</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>13</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>14</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>15</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>16</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>17</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
+                          </tr>
+                          <tr>
+                            <td>18</td>
+                            <td>02-05-2023</td>
+                            <td>₹5500</td>
+                            <td>₹5000</td>
+                            <td>₹10,500</td>
+                            <td>Daily 200</td>
                           </tr>
                         </tbody>
                       </table>

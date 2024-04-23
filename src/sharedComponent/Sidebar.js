@@ -245,16 +245,20 @@ const Sidebar = () => {
                         <p
                           className={
                             currentRoute === "/Sequence" ||
+                            currentRoute === "/TotalPayments" ||
+                            currentRoute === "/InvestmentLifecycle" ||
                             currentRoute === "/PaymentSheet"
                               ? "activeTxt"
                               : "deActiveTxt"
                           }
                         >
-                          Sequence
+                          Accounts
                         </p>
                         <img
                           src={
                             currentRoute === "/Sequence" ||
+                            currentRoute === "/TotalPayments" ||
+                            currentRoute === "/InvestmentLifecycle" ||
                             currentRoute === "/PaymentSheet"
                               ? activeImg
                               : null
@@ -282,7 +286,7 @@ const Sidebar = () => {
                             : "deActiveTxt"
                         }
                       >
-                        Sequence
+                       Pre Sequence
                       </div>
                     </Link>
                     <Link
@@ -296,6 +300,32 @@ const Sidebar = () => {
                         }
                       >
                         Pre Payment Sheet
+                      </div>
+                    </Link>
+                    <Link
+                      to="/TotalPayments"
+                      className="menuLink"
+                      onClick={mobileSidebarOff}
+                    >
+                      <div
+                        className={
+                          currentRoute === "/TotalPayments" ? "activeTxt" : "deActiveTxt"
+                        }
+                      >
+                        Total Payments
+                      </div>
+                    </Link>
+                    <Link
+                      to="/InvestmentLifecycle"
+                      className="menuLink"
+                      onClick={mobileSidebarOff}
+                    >
+                      <div
+                        className={
+                          currentRoute === "/InvestmentLifecycle" ? "activeTxt" : "deActiveTxt"
+                        }
+                      >
+                        Investment Lifecycle
                       </div>
                     </Link>
                   </div>

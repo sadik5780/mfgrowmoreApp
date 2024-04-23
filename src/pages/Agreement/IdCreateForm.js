@@ -510,7 +510,7 @@ const IdCreateForm = () => {
               <h3 className="title">Investment Plans</h3>
             </div>
             <div className="planSelect">
-              <select value=""
+              <select
                 className="form-select"
                 aria-label="Default select example"
                 value={selectedOption}
@@ -599,30 +599,37 @@ const IdCreateForm = () => {
                   </div>
                   <div className="col-lg-6 mb-2">
                     <div className="row">
-                      <div className="col-lg-6">
+                      <div className="col-lg-4">
                         <label htmlFor="" className="pass_text">
-                          Profit upto
+                          Profit (%) upto 
                         </label>
                         <input
+                        id="a"
                           type="text"
                           placeholder="Enter nominee address..."
                           className="form-control"
                         />
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-lg-4">
                         <label htmlFor="" className="pass_text">
-                          One time / per month
+                          Freq
                         </label>
                         <select value=""
                           className="form-select"
                           aria-label="Default select example"
                         >
                           <option value="" selected>
-                            Select Frequency
+                            Frequency
                           </option>
                           <option value="">One Time</option>
                           <option value="">Per Month</option>
                         </select>
+                      </div>
+                      <div className="col-lg-4">
+                        <label htmlFor="" className="pass_text">
+                          Profit in Rs.
+                        </label>
+                        <p className="form-control">43000980980</p>
                       </div>
                     </div>
                   </div>

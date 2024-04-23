@@ -58,6 +58,7 @@ const Sequence = () => {
         <div className="wrapper-main">
           <div className="table-wrapper left-table ">
             <table className="sequenceTable">
+              {/* This data is for whole month (1-30) */}
               <thead>
                 <tr>
                   <th>Sr. No</th>
@@ -76,7 +77,7 @@ const Sequence = () => {
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Friday</td>
+                  <td rowspan="3" scope="rowgroup" className="day">Friday</td>
                   <td>March - 2024</td>
                   <td>123213</td>
                   <td>Brooklyn Simmons</td>
@@ -89,8 +90,7 @@ const Sequence = () => {
                 </tr>
                 <tr className="newCust">
                   {/* This class should be removed after 1 month for New Customer  */}
-                  <td>2</td>
-                  <td>Friday</td>
+                  <td>2</td> 
                   <td>March - 2024</td>
                   <td>123213</td>
                   <td>Brooklyn Simmons</td>
@@ -102,8 +102,7 @@ const Sequence = () => {
                   <td>11200</td>
                 </tr>{" "}
                 <tr className="profitUp">
-                  <td>3</td>
-                  <td>Friday</td>
+                  <td>3</td> 
                   <td>March - 2024</td>
                   <td>123213</td>
                   <td>Brooklyn Simmons</td>

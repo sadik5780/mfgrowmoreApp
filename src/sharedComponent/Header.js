@@ -65,7 +65,9 @@ const Header = () => {
                   (currentRoute === "/PaymentSheet" && "Pre Payment Sheet") ||
                   (currentRoute === "/Sequence" && "Sequence Sheet") ||
                   (currentRoute === "/Reports" && "Reports") ||
-                  (currentRoute === "/CustomerDetails" && "Customer Details")}
+                  (currentRoute === "/CustomerDetails" && "Customer Details") ||
+                  (currentRoute === "/TotalPayments" && "Total Payments")
+                  }
               </label>
             </div>
           </div> 

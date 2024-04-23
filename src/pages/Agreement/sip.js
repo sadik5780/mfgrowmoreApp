@@ -40,20 +40,28 @@ const Sip = () => {
         {viewAgreementList && (
           <>
             <div className="search-filter-wrapper">
-              <div className="search-filter-left">
-                <input
-                  type="text"
-                  className="form-control serach-input"
-                  placeholder="Search by Name, Email, Contact..."
-                />
-                <input
-                  type="date"
-                  className="form-control date-input mx-3"
-                  // placeholder="Search by date"
-                />
-                {/* <button className="fltr-btn">
-                  <img src={ic_export} alt="" />
-                </button> */}
+            <div className="search-filter-left">
+                <div className="row">
+                  <div className="col-lg-5"> 
+                    <input
+                      type="text"
+                      className="form-control serach-input"
+                      placeholder="Search by Name, Email, Contact..."
+                    />
+                  </div>
+                  <div className="col-lg-5">
+                    <input
+                      type="date"
+                      className="form-control date-input"
+                      // placeholder="Search by date"
+                    />
+                  </div>
+                  <div className="col-lg-2">
+                    <button className="fltr-btn">
+                      <img src={ic_export} alt="" />
+                    </button>
+                  </div>
+                </div>
               </div>
               <div className="dark-btns-wrapper search-filter">
                 <button
